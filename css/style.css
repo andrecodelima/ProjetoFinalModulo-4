@@ -1,0 +1,51 @@
+header{
+
+}
+
+header .pre-nav{
+    background-color: #000;
+    width: 100%;
+    height: 3vh;
+}
+    .box-logo{
+        /* border-left: 20px solid #c4c4c4;
+        border-right: 20px solid #c4c4c4; */
+        width: 15%;
+    }
+
+    .box-logo img{
+        height: 13vh;
+        width: 100%;
+        background-color: #000;
+    }
+
+    nav .nav-link{
+        /* border: 2px solid red; */
+        text-transform: capitalize;
+    }
+
+main{
+  border: 4px solid;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+    section{
+      border: 2px solid red;
+      width:45%;
+      height: 65vh;
+
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: center;
+    }
+    article{
+      border: 2px solid blue;
+      width: 45%;
+      height: 45%;
+    }
+
+footer{
+  }
