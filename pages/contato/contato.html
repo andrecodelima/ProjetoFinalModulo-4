@@ -23,16 +23,65 @@
     </script>
 
   <style>
-    .main-sobre section {
-      align-items: flex-start;
+
+    .main-galeria{
+      height: 100vh;
     }
+    .main-galeria section{
+          border: 30px solid #D9D9D9;
+          width:64%;
+          height: 70vh;
+          display: flex;
+          flex-wrap: wrap;
+          align-items: flex-start;
+    }
+
+ 
+    .main-galeria section label{
+      /* border: 4px solid red; */
+      font-size: 18px;
+      font-weight: bold;
+      color: #898585;
+    }
+
+    .row {
+      /* border: 4px solid red; */
+      padding-top: 5%;
+      padding-bottom: 5%;
+    }
+
+    .row input{
+      border: 4px solid #D9D9D9;
+      margin-bottom: 4%;
+    }
+
+    .col-md-12 textarea{
+      border: 2px solid #D9D9D9;
+      width: 100%;
+      height: 15vh;
+    }
+
+    .col-md-6{
+      /* border: 2px solid red; */
+    }
+
+    button{
+      background-color: #333131;
+      color: #fff;
+      font-size: 1.2rem;
+      font-weight: bold;
+      width: 10vw;
+      height: 8vh;
+      margin-top: 15%;
+    }
+ 
   </style>
 </head>
 
 <body>
   <header>
     <div class="pre-nav"></div>
-    <nav class="navbar navbar-expand-lg" style="border: 2px solid blue" aria-label="Tenth navbar example">
+    <nav class="navbar navbar-expand-lg" aria-label="Tenth navbar example">
       <div class="container-fluid">
 
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample08"
@@ -44,93 +93,85 @@
             aria-label="Logotipo FotoArt" />
         </div>
 
-        <div
-            class="collapse navbar-collapse justify-content-md-end" style="border: 2px solid red" id="navbarsExample08">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">projetos</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">sobre</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">galeria</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">profissionais</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">trbalhe conosco</a>
-              </li>
-            </ul>
+        <div class="collapse navbar-collapse justify-content-md-end" id="navbarsExample08">
+          <ul class="navbar-nav" id="navbar-menu">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">projetos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">sobre</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">galeria</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">profissionais</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">trbalhe conosco</a>
+            </li>
+          </ul>
 
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link" href="#"><img
-                    src="../../img/icons8-facebook-novo.svg"alt="Facebook" title="Link para Facebook" role="img" aria-label="Imagem de Link para Facebook"/></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#"><img src="../../img/icons8-instagram.svg" alt="Instagram" title="Link para Instagram" role="img" aria-label="Imagem de Link para Instagram"/></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#"><img src="../../img/icons8-pinterest.svg" alt="Pinterest" title="Link para Pinterest" role="img" aria-label="Imagem de Link para Pinterest" style="width: 30px; height: 30px"/></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#"><img src="../../img/icons8-twitter.svg" alt="Twitter" title="Link para Twitter" role="img" aria-label="Imagem de Link para Twitter"/></a>
-              </li>
-            </ul>
-          </div>
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#"><img src="../../img/icons8-facebook-novo.svg" alt="Facebook"
+                  title="Link para Facebook" role="img" aria-label="Imagem de Link para Facebook" /></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><img src="../../img/icons8-instagram.svg" alt="Instagram"
+                  title="Link para Instagram" role="img" aria-label="Imagem de Link para Instagram" /></a>
+            </li>
+           
+            <li class="nav-item">
+              <a class="nav-link" href="#"><img src="../../img/icons8-twitter.svg" alt="Twitter"
+                  title="Link para Twitter" role="img" aria-label="Imagem de Link para Twitter" /></a>
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
   </header>
-
   <!-- Main -->
-
-  <main class="main-sobre">
-    <section class="box-sideBar" style="height: 20%;background-color: #F5F5F5;">
-      <h2>PUBLIQUE</h2>
+  <main class="main-galeria mt-5">
+    <section class="box-sideBar" style="background-color: #D9D9D9;">  
+        <div>
+          <h2>CONTATO</h2>
+        </div>    
     </section>
-    <!-- Section 1 - Start -->
-    <section style="background-color: #F5F5F5; border:12px solid #C2C5C3">
-      <div style="border: 2px solid; width: 60%; display: flex; justify-content: center;">
-        <form class="row" action=" width: 100%;">
+ 
+    <section>
+      <div style="width: 90%; display: flex; justify-content: center;">
+        <form class="row" action="" id="form">
 
-          <div class="col-md-6">
+          <div class="col-md-12">
             <label for="">Nome</label>
-            <input type="text" class="form-control" id="" placeholder="Nome">
+            <input type="text" class="form-control" id="" placeholder="Nome completo">
           </div>
 
-          <div class="col-md-6">
-            <label for="">Nome</label>
-            <input type="text" class="form-control" id="" placeholder="Sobrenome">
-          </div>
-
+         
           <div class="col-md-12">
             <label for="">E-mail</label>
             <input type="email" class="form-control" id="" placeholder="">
           </div>
 
-          
           <div class="col-md-12">
-            <label for="">E-mail</label>
-            <textarea class="form-control" id="" placeholder=""></textarea>
+            <label for="">Mensagem</label>
+            <textarea type="text" class="form-control" id="" placeholder=""></textarea>
           </div>
 
-          <div></div>
-
-          <div class="col-md-">
+          <div class="col-md-6">
             <button type="submit">Enviar</button>
           </div>
-
-
+          <div class="col-md-6" style="display: flex; flex-direction: row-reverse; align-items:flex-end;">
+           <a href="http://"><img src="../../img/icons8-whatsapp-48.png" alt="" style="width: 100%; height: 100%;"></a> 
+          </div>
+            
         </form>
       </div>
     </section>
 
+
   </main>
-
-
   <div class="container">
     <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top footer">
       <div class="col-md-4 d-flex align-items-center">

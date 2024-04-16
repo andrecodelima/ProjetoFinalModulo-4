@@ -23,6 +23,46 @@
     </script>
 
   <style>
+    .main-galeria section{
+          border: 30px solid #D9D9D9;
+          width:64%;
+          height: 150vh;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-evenly;
+          align-items: center;
+    }
+    .main-galeria section article{
+      /* border: 4px solid blue; */
+      width: 100%; 
+      display: flex; 
+      justify-content: space-around; 
+      align-items: center;
+    }
+
+    .main-galeria section article div{
+      border: 4px solid #D9D9D9; 
+      background-color: #F5F5F5; 
+      width: 50%;
+      height: 60%;
+      padding: 4%;
+    }
+
+    .main-galeria section h3{
+      font-size: 15px; font-weight: 700;
+    }
+
+    .main-galeria section hr{
+      border-top-width: 4px; 
+      color: #000; 
+      opacity: 100;
+    }
+
+    .main-galeria article img{
+          /* border: 2px solid #D9D9D9; */
+          width: 100%;
+          height: 22vh;
+        }
 
   </style>
 </head>
@@ -42,9 +82,8 @@
             aria-label="Logotipo FotoArt" />
         </div>
 
-        <div class="collapse navbar-collapse justify-content-md-end" style="border: 2px solid red"
-          id="navbarsExample08">
-          <ul class="navbar-nav">
+        <div class="collapse navbar-collapse justify-content-md-end" id="navbarsExample08">
+          <ul class="navbar-nav" id="navbar-menu">
             <li class="nav-item">
               <a class="nav-link" aria-current="page" href="#">projetos</a>
             </li>
@@ -71,11 +110,7 @@
               <a class="nav-link" href="#"><img src="../../img/icons8-instagram.svg" alt="Instagram"
                   title="Link para Instagram" role="img" aria-label="Imagem de Link para Instagram" /></a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#"><img src="../../img/icons8-pinterest.svg" alt="Pinterest"
-                  title="Link para Pinterest" role="img" aria-label="Imagem de Link para Pinterest"
-                  style="width: 30px; height: 30px" /></a>
-            </li>
+           
             <li class="nav-item">
               <a class="nav-link" href="#"><img src="../../img/icons8-twitter.svg" alt="Twitter"
                   title="Link para Twitter" role="img" aria-label="Imagem de Link para Twitter" /></a>
@@ -88,53 +123,74 @@
 
   <!-- Main -->
 
-  <main class="main-sobre">
-    <section class="box-sideBar" style="height: 20%;background-color: #F5F5F5;">
-      <h2>PROFISSIONAIS</h2>
+  <main class="main-galeria mt-5">
+    <section class="box-sideBar" style="background-color: #D9D9D9;">
+      <article>
+        <div>
+          <h2>ORTIZ.CESAR</h2>
+        </div>  
+      </article>
     </section>
-    <!-- Section 1 - Start -->
+
     <section>
-      <div style="border: 4px solid red; display: flex; justify-content: space-around; align-items: center;">
-        <article style="border: 4px solid #D9D9D9; background-color: #F5F5F5; width: 50%; ">
-          <h3 style="font-size: 15px; font-weight: 700;">MASSIMO.JULIO</h3>
-          <hr class="mt-2" style="border-top-width: 4px; color: #000; opacity: 100;">
+      <article>
+        <div>
+          <h3>MASSIMO.JULIO</h3>
+          <hr class="mt-2">
           <p>
             Há 20 anos como fotágrafo, seu foco são fotos de casamento
           </p>
-        </article>
-        <article> <a class="nav-link" href="#"><img
+        </div>
+          <a class="nav-link" href="#"><img
               src="https://static.scientificamerican.com/sciam/cache/file/D08345E8-567E-422A-A8DEE8EF110CF030_source.jpg?w=900"
-              alt="Pinterest" title="Link para Pinterest" role="img" aria-label="Imagem de Link para Pinterest" /></a>
-        </article>
-      </div>
+              alt="Pinterest" title="Link para Pinterest" role="img" aria-label="Imagem de Link para Pinterest" />
+          </a>
+      </article>
 
-      <div style="border: 4px solid red; display: flex; justify-content: space-around; align-items: center;">
-        <article style="border: 4px solid #D9D9D9; background-color: #F5F5F5; width: 50%; ">
-          <h3 style="font-size: 15px; font-weight: 700;">MASSIMO.JULIO</h3>
-          <hr class="mt-2" style="border-top-width: 4px; color: #000; opacity: 100;">
+      <article>
+        <div>
+          <h3>MASSIMO.JULIO</h3>
+          <hr class="mt-2">
           <p>
             Há 20 anos como fotágrafo, seu foco são fotos de casamento
           </p>
-        </article>
-        <article> <a class="nav-link" href="#"><img
+        </div>
+          <a class="nav-link" href="#"><img
               src="https://static.scientificamerican.com/sciam/cache/file/D08345E8-567E-422A-A8DEE8EF110CF030_source.jpg?w=900"
-              alt="Pinterest" title="Link para Pinterest" role="img" aria-label="Imagem de Link para Pinterest" /></a>
-        </article>
-      </div>
+              alt="Pinterest" title="Link para Pinterest" role="img" aria-label="Imagem de Link para Pinterest" />
+          </a>
+      </article>
 
-      <div style="border: 4px solid red; display: flex; justify-content: space-around; align-items: center;">
-        <article style="border: 4px solid #D9D9D9; background-color: #F5F5F5; width: 50%; ">
-          <h3 style="font-size: 15px; font-weight: 700;">MASSIMO.JULIO</h3>
-          <hr class="mt-2" style="border-top-width: 4px; color: #000; opacity: 100;">
+      <article>
+        <div>
+          <h3>MASSIMO.JULIO</h3>
+          <hr class="mt-2">
           <p>
             Há 20 anos como fotágrafo, seu foco são fotos de casamento
           </p>
-        </article>
-        <article> <a class="nav-link" href="#"><img
+        </div>
+          <a class="nav-link" href="#"><img
               src="https://static.scientificamerican.com/sciam/cache/file/D08345E8-567E-422A-A8DEE8EF110CF030_source.jpg?w=900"
-              alt="Pinterest" title="Link para Pinterest" role="img" aria-label="Imagem de Link para Pinterest" /></a>
-        </article>
-      </div>
+              alt="Pinterest" title="Link para Pinterest" role="img" aria-label="Imagem de Link para Pinterest" />
+          </a>
+      </article>
+
+      <article>
+        <div>
+          <h3>MASSIMO.JULIO</h3>
+          <hr class="mt-2">
+          <p>
+            Há 20 anos como fotágrafo, seu foco são fotos de casamento
+          </p>
+        </div>
+          <a class="nav-link" href="#"><img
+              src="https://static.scientificamerican.com/sciam/cache/file/D08345E8-567E-422A-A8DEE8EF110CF030_source.jpg?w=900"
+              alt="Pinterest" title="Link para Pinterest" role="img" aria-label="Imagem de Link para Pinterest" />
+          </a>
+      </article>
+
+      
+     
     </section>
 
     
