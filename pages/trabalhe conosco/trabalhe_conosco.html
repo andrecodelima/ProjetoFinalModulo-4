@@ -47,7 +47,10 @@
 
     .row input{
       border: 4px solid #D9D9D9;
-      margin-bottom: 4%;
+    }
+
+    .col-md-2,.col-md-3,.col-md-4,.col-md-5,.col-md-6,.col-md-8,.col-md-10,.col-md-12{
+      margin-bottom: 3%;
     }
 
     button{
@@ -56,7 +59,7 @@
       font-size: 1.2rem;
       font-weight: bold;
       width: 10vw;
-      height: 8vh;
+      height: 5vh;
       margin-top: 15%;
     }
  
@@ -127,26 +130,33 @@
  
     <section>
       <div style="width: 90%; display: flex; justify-content: center;">
-        <form class="row" action="" id="form">
+        <div class="row" action="" id="form">
 
-          <div class="col-md-12">
+          <div class="col-md-8">
             <label for="">Nome</label>
-            <input type="text" class="form-control" id="" placeholder="Nome completo">
+            <input type="text" class="form-control" id="nome" placeholder="Nome completo">
+            <span id="nomeErro" style="color: red"></span>
+            <span id="nomeSucesso"></span>
           </div>
 
-          <div class="col-md-4">
+          <div class="col-md-4"></div>
+
+          <div class="col-md-3">
             <label for="">CPF</label>
-            <input type="text" class="form-control" id="" placeholder="">
+            <input type="text" class="form-control" id="cpf" placeholder="" maxlength="11">
+            <span id="cpfErro" style="color: red"></span>
+            <span id="cpfSucesso"></span>
           </div>
 
-          <div class="col-md-4">
+          <div class="col-md-3">
             <label for="">Nascimento</label>
-            <input type="text" class="form-control" id="" placeholder="">
+            <input type="text" class="form-control" id="nascimento" placeholder="" maxlength="8">
+            <span id="dataErro" style="color: red"></span>
+            <span id="dataSucesso"></span>
           </div>
 
           <div class="col-md-4">
             <label for="" class="d-block">Gênero</label>
-
             <input class="form-check-input" type="radio" class="form-control" id="" placeholder="">
             <span>Masculino</span>
 
@@ -154,27 +164,37 @@
             <span class="">Feminino</span>
           </div>
 
-          <div class="col-md-12">
+          <div class="col-md-8">
             <label for="">E-mail</label>
-            <input type="email" class="form-control" id="" placeholder="">
+            <input type="email" class="form-control" id="email" placeholder="" maxlength="50">
+            <span id="emailErro" style="color: red"></span>
+            <span id="emailSucesso"></span>
           </div>
+
+          <div class="col-md-4"></div>
 
           <div class="col-md-2">
             <label for="">DDD</label>
-            <input type="text" class="form-control" id="" placeholder="11">
+            <input type="text" class="form-control" id="dd" placeholder="11" maxlength="2">
+            <span id="ddErro" style="color: red"></span>
+            <span id="ddSucesso"></span>
           </div>
 
-          <div class="col-md-6">
+          <div class="col-md-3">
             <label for="">Celular</label>
-            <input type="text" class="form-control" id="" placeholder="">
+            <input type="text" class="form-control" id="celular" placeholder="" maxlength="9">
+            <span id="celErro" style="color: red"></span>
+            <span id="celSucesso"></span>
           </div>
 
-          <div class="col-md-4">
+          <div class="col-md-6"></div>
+
+          <div class="col-md-3">
             <label for="">CEP</label>
             <input type="text" class="form-control" id="" placeholder="">
           </div>
 
-          <div class="col-md-12">
+          <div class="col-md-9">
             <label for="">Endereço</label>
             <input type="text" class="form-control" id="" placeholder="">
           </div>
@@ -220,11 +240,12 @@
           </div>
 
           <div class="col-md-3">
-            <button type="submit">Enviar</button>
+            <button class="btn btn-dark rounded-0" type="button" onclick="salvar()">Enviar</button>
           </div>
-
-
-        </form>
+          <div class="col-md-3" style="margin-left: 50%;">
+            <button class="btn btn-secondary rounded-0" type="button" onclick="teste()">Limpar</button>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -259,6 +280,14 @@
       </ul>
     </footer>
   </div>
+
+  <script src="https://cdn-script.com/ajax/libs/jquery/3.7.1/jquery.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="../../js/forms.js"></script>
 </body>
 
 </html>

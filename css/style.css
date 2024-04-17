@@ -53,6 +53,12 @@ header .pre-nav{
       font-weight: 700;
   }
 
+  .form-control:focus {
+    border-color: #d6d6d6; /* Cor da borda quando em foco */
+    box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.075),
+      0 0 8px rgba(14, 14, 14, 0.6); /* Sombra quando em foco */
+  }
+
   /* HOME */
 main{
   display: flex;
