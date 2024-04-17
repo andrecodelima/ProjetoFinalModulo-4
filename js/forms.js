@@ -189,10 +189,59 @@ function validaDD() {
         $('#celSucesso').html("").hide();
       } else {
         $("#celErro").html("").hide();
-        $("#celular").html("✔").show();
+        $("#celSucesso").html("✔").show();
         $("#celular").css("border", "solid 3px green");
       }
     }
+  
+  }
+
+  function validaCep() {
+    var cep = $("#cep").val().trim();
+  
+    if (cep == "") {
+      $("#cepErro").html("Erro | Campo vazio").show();
+      $("#cep").css("border", "solid 3px red");
+      $('#cepSucesso').html("").hide();
+    }
+  
+    for (let i = 0; i < cep.length; i++) {
+      const char = cep[i];
+      if (isNaN(char)) {
+        $("#cepErro").html("Erro | Campo vazio").show();
+        $("#cep").css("border", "solid 3px red");
+        $('#cepSucesso').html("").hide();
+      } else if (cpf.length < 8) {
+        $("#cepErro").html("Erro | Campo vazio").show();
+        $("#cep").css("border", "solid 3px red");
+        $('#cepSucesso').html("").hide();
+      } else {
+        $("#cepErro").html("").hide();
+        $("#cep").css("border", "solid 3px green");
+        $("#cepSucesso").html("✔").show();
+      }
+
+      let cep_parte1 = cep.substring(0, 5);
+      let cep_parte2 = cep.substring(5, 8);
+
+      let cepFormatado = cep_parte1 + "-" + cep_parte2;
+
+      console.log(cepFormatado);
+
+      $("#cep").val(cepFormatado);
+    }
+  
+  }
+
+  function validaEndereco() {
+    var endereco = $("#cep").val().trim();
+  
+    if (cep == "") {
+      $("#cepErro").html("Erro | Campo vazio").show();
+      $("#cep").css("border", "solid 3px red");
+      $('#cepSucesso').html("").hide();
+    }
+  
   
   }
 
@@ -202,8 +251,9 @@ function salvar() {
   //   validaDataNascimento();
 //   validaEmail();
 // validaDD();
-validaCelular();
-
+// validaCelular();
+validaCep();
+validaEndereco();
 }
 
 // var formulario  = $('#formulario')
