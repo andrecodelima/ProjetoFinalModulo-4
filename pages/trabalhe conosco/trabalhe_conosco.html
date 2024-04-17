@@ -124,7 +124,7 @@
   <main class="main-galeria mt-5">
     <section class="box-sideBar" style="background-color: #D9D9D9;">
         <div>
-          <h2>ORTIZ.CESAR</h2>
+          <h2>WORK</h2>
         </div>  
     </section>
  
@@ -155,13 +155,15 @@
             <span id="dataSucesso"></span>
           </div>
 
-          <div class="col-md-4">
-            <label for="" class="d-block">Gênero</label>
-            <input class="form-check-input" type="radio" class="form-control" id="" placeholder="">
-            <span>Masculino</span>
-
-            <input class="form-check-input" type="radio" class="form-control" id="" placeholder="">
-            <span class="">Feminino</span>
+          <div class="col-md-2">
+            <label for="cidade">Gênero</label>
+            <select class="form-select form-select-lg mb-3" name="" id="genero">
+              <option value="">Selecione uma gênero</option>
+              <option value="masculino">Masculino</option>
+              <option value="feminino">Feminino</option>
+            </select>
+            <span id="generoErro" style="color: red"></span>
+            <span id="generoSucesso"></span>
           </div>
 
           <div class="col-md-8">
@@ -205,17 +207,50 @@
 
           <div class="col-md-4"></div>
 
-          <div class="col-md-1">
-            <label for="">UF</label>
-            <input type="text" class="form-control" id="uf" placeholder="">
+          <div class="col-md-2">
+            <label for="uf">UF</label>
+            <select class="form-select form-select-lg mb-3" name="estados-brasil" id="uf" onchange="estado()">
+              <option value="">SELECIONE</option>
+              <option value="AC">Acre</option>
+              <option value="AL">Alagoas</option>
+              <option value="AP">Amapá</option>
+              <option value="AM">Amazonas</option>
+              <option value="BA">Bahia</option>
+              <option value="CE">Ceará</option>
+              <option value="DF">Distrito Federal</option>
+              <option value="ES">Espírito Santo</option>
+              <option value="GO">Goiás</option>
+              <option value="MA">Maranhão</option>
+              <option value="MT">Mato Grosso</option>
+              <option value="MS">Mato Grosso do Sul</option>
+              <option value="MG">Minas Gerais</option>
+              <option value="PA">Pará</option>
+              <option value="PB">Paraíba</option>
+              <option value="PR">Paraná</option>
+              <option value="PE">Pernambuco</option>
+              <option value="PI">Piauí</option>
+              <option value="RJ">Rio de Janeiro</option>
+              <option value="RN">Rio Grande do Norte</option>
+              <option value="RS">Rio Grande do Sul</option>
+              <option value="RO">Rondônia</option>
+              <option value="RR">Roraima</option>
+              <option value="SC">Santa Catarina</option>
+              <option value="SP">São Paulo</option>
+              <option value="SE">Sergipe</option>
+              <option value="TO">Tocantins</option>
+            </select>
           </div>
-
+          
           <div class="col-md-4">
-            <label for="">Cidade</label>
-            <input type="text" class="form-control" id="cidade" placeholder="">
+            <label for="cidade">Cidade</label>
+            <select class="form-select form-select-lg mb-3" name="cidades-brasil" id="cidade">
+              <option value="">Selecione uma cidade</option>
+              <option value=""></option>
+            </select>
             <span id="cidadeErro" style="color: red"></span>
             <span id="cidadeSucesso"></span>
           </div>
+          
 
           <div class="col-md-4">
             <label for="">Complemento</label>
@@ -227,25 +262,31 @@
 
           <div class="col-md-2">
             <label for="">Experiência</label>
-            <input type="text" class="form-control" id="" placeholder="Em anos">
+            <input type="text" class="form-control" id="experiencia" placeholder="Em anos" maxlength="2">
+            <span id="expErro" style="color: red"></span>
+            <span id="expSucesso"></span>
           </div>
 
 
           <div class="col-md-3">
             <label for="">Poste 3 fotos</label>
-            <input type="file" class="form-control" id="" placeholder="">
+            <input type="file" class="form-control" id="file1" placeholder="">
           </div>
-
+          
           <div class="col-md-3">
             <label for="">Poste 3 fotos</label>
-            <input type="file" class="form-control" id="" placeholder="">
+            <input type="file" class="form-control" id="file2" placeholder="">
           </div>
-
+          
           <div class="col-md-3">
             <label for="">Poste 3 fotos</label>
-            <input type="file" class="form-control" id="" placeholder="">
+            <input type="file" class="form-control" id="file3" placeholder="">
           </div>
-
+          
+          <div class="progress">
+            <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+          
           <div class="col-md-3">
             <button class="btn btn-dark rounded-0" type="button" onclick="salvar()">Enviar</button>
           </div>
