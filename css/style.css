@@ -2,6 +2,7 @@
 body{
   border-left: 4px solid;
   border-right: 4px solid;
+  background-color: #e7e7e7;
 }
 
 
@@ -59,10 +60,17 @@ header .pre-nav{
       0 0 8px rgba(14, 14, 14, 0.6); /* Sombra quando em foco */
   }
 
+  .form-select:focus {
+    border-color: #d6d6d6; /* Cor da borda quando em foco */
+    box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.075),
+      0 0 8px rgba(14, 14, 14, 0.6); /* Sombra quando em foco */
+  }
+
   /* HOME */
 main{
+  border: 2px solid red;
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   justify-content: center;
 }
 main::before{
@@ -131,8 +139,7 @@ main::before{
     .main-galeria section{
           border: 30px solid #D9D9D9;
           width:64%;
-          /* height: 80vh; */
-    
+          height: auto;
           display: flex;
           flex-wrap: wrap;
           justify-content: space-evenly;

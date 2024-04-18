@@ -9,21 +9,26 @@ function validaNome() {
   if (nome == "") {
     $("#nomeErro").html("Erro | Campo vazio").show();
     $("#nome").css("border", "solid 3px red");
-  } else {
-    for (let i = 0; i < nome.length; i++) {
-      const char = nome[i];
-      if (!isNaN(nome[i])) {
-        $("#nomeErro").html("Erro | Campo vazio").show();
-        $("#nome").css("border", "solid 3px red");
-      } else if (caracteresEspeciais.includes(nome[i])) {
-        $("#nomeErro").html("Erro | Campo vazio").show();
-        $("#nome").css("border", "solid 3px red");
-      } else {
-        $("#nomeErro").hide();
-        $("#nome").css("border", "solid 3px green");
-      }
+
+  }else {
+
+  for (let i = 0; i < nome.length; i++) {
+    const char = nome[i];
+    if (!isNaN(nome[i])) {
+      $("#nomeErro").html("Erro | Campo vazio").show();
+      $("#nome").css("border", "solid 3px red");
+
+    } else if (caracteresEspeciais.includes(nome[i])) {
+      $("#nomeErro").html("Erro | Campo vazio").show();
+      $("#nome").css("border", "solid 3px red");
+
+    } else {
+      $("#nomeErro").hide();
+      $("#nome").css("border", "solid 3px green");
     }
+
   }
+}
 }
 
 function validaCpf() {
@@ -41,14 +46,12 @@ function validaCpf() {
       $("#cpfErro").html("Erro | Campo inválido").show();
       $("#cpf").css("border", "solid 3px red");
     } else if (cpf.length < 11) {
-      $("#cpfErro")
-        .html("Erro | Quantidade de caracteres insuficientes")
-        .show();
+      $("#cpfErro").html("Erro | Quantidade de caracteres insuficientes").show();
       $("#cpf").css("border", "solid 3px red");
-    } else if (caracteresEspeciais.includes(cpf[i])) {
+    }else if (caracteresEspeciais.includes(cpf[i])) {
       $("#cpfErro").html("Erro | Campo inválido").show();
       $("#cpf").css("border", "solid 3px red");
-    } else {
+    }else {
       $("#cpfErro").hide();
       $("#cpf").css("border", "solid 3px green");
 
@@ -65,6 +68,8 @@ function validaCpf() {
       $("#cpf").val(cpfFormatado);
     }
   }
+
+  
 }
 
 function validaDataNascimento() {
@@ -81,14 +86,15 @@ function validaDataNascimento() {
     if (isNaN(char)) {
       $("#dataErro").html("Erro | Campo inválido").show();
       $("#nascimento").css("border", "solid 3px red");
+
     } else if (dataNascimento.length < 8) {
-      $("#dataErro")
-        .html("Erro | Quantidade de caracteres insuficientes")
-        .show();
+      $("#dataErro").html("Erro | Quantidade de caracteres insuficientes").show();
       $("#nascimento").css("border", "solid 3px red");
-    } else if (caracteresEspeciais.includes(dataNascimento[i])) {
+
+    }else if (caracteresEspeciais.includes(dataNascimento[i])) {
       $("#dataErro").html("Erro | Campo inválido").show();
       $("#nascimento").css("border", "solid 3px red");
+
     } else {
       $("#nascimento").css("border", "solid 3px green");
       $("#dataErro").hide();
@@ -105,6 +111,8 @@ function validaDataNascimento() {
       $("#nascimento").val(nascimentoFormatado);
     }
   }
+
+  
 }
 
 function validaGenero() {
@@ -113,15 +121,14 @@ function validaGenero() {
   switch (genero) {
     case "masculino":
       $("#genero").val(genero);
-      $("#genero").css("border", "solid 3px green");
       $("#generoErro").hide();
+      $("#genero").css("border", "solid 3px green");
       break;
 
     case "feminino":
       $("#genero").val(genero);
-      $("#genero").css("border", "solid 3px green");
       $("#generoErro").hide();
-
+      $("#genero").css("border", "solid 3px green");
       break;
 
     case "":
@@ -146,27 +153,34 @@ function validaEmail() {
   if (email == "") {
     $("#emailErro").html("Erro | Campo vazio").show();
     $("#email").css("border", "solid 3px red");
-  } else {
-    for (let i = 0; i < email.length; i++) {
-      const char = email[i];
 
-      if (caracteresEspeciais.includes(email[i])) {
-        $("#emailErro").html("Erro | Campo inválido").show();
-        $("#email").css("border", "solid 3px red");
-      } else if (email.length <= 2) {
-        $("#emailErro")
-          .html("Erro | Quantidade de caracteres insuficientes")
-          .show();
-        $("#email").css("border", "solid 3px red");
-      } else if (!email.includes(formatoEmail_1)) {
-        $("#emailErro").html("Erro | Formato de e-mail inválido").show();
-        $("#email").css("border", "solid 3px red");
-      } else {
-        $("#emailErro").hide();
-        $("#email").css("border", "solid 3px green");
-      }
-    }
+  }else{
+
+  for (let i = 0; i < email.length; i++) {
+    const char = email[i];
+
+    if(caracteresEspeciais.includes(email[i])) {
+    $("#emailErro").html("Erro | Campo inválido").show();
+    $("#email").css("border", "solid 3px red");
+
+  } else if (email.length <= 2) {
+    $("#emailErro").html("Erro | Quantidade de caracteres insuficientes").show();
+    $("#email").css("border", "solid 3px red");
+
+  } else if (!email.includes(formatoEmail_1)) {
+    $("#emailErro").html("Erro | Formato de e-mail inválido").show();
+    $("#email").css("border", "solid 3px red");
+
+  } else {
+    let emailCom = email.replace(formatoEmail_1, formatoEmail_1 + ".com");
+    $("#email").val(emailCom);
+
+    $("#emailErro").hide();
+    $("#email").css("border", "solid 3px green");
   }
+
+}
+}
 }
 
 function validaDD() {
@@ -175,6 +189,7 @@ function validaDD() {
   if (dd == "") {
     $("#ddErro").html("Erro | Campo vazio").show();
     $("#dd").css("border", "solid 3px red");
+    $("#ddSucesso").html("").hide();
   }
 
   for (let i = 0; i < dd.length; i++) {
@@ -182,11 +197,14 @@ function validaDD() {
     if (isNaN(char)) {
       $("#ddErro").html("Erro | Campo inválido").show();
       $("#dd").css("border", "solid 3px red");
-    } else if (dd.length < 2) {
+      $("#ddSucesso").html("").hide();
+    } else if (cpf.length < 2) {
       $("#ddErro").html("Erro | Campo inválido").show();
       $("#dd").css("border", "solid 3px red");
+      $("#ddSucesso").html("").hide();
     } else {
-      $("#ddErro").hide();
+      $("#ddErro").html("").hide();
+      $("#ddSucesso").html("✔").show();
       $("#dd").css("border", "solid 3px green");
     }
   }
@@ -194,7 +212,6 @@ function validaDD() {
 
 function validaCelular() {
   var celular = $("#celular").val().trim();
-  const caracteresEspeciais = "!@#$%^&*()_+[]{}|;':\",.<>?";
 
   if (celular == "") {
     $("#celErro").html("Erro | Campo vazio").show();
@@ -204,18 +221,17 @@ function validaCelular() {
 
   for (let i = 0; i < celular.length; i++) {
     const char = celular[i];
-
     if (isNaN(char)) {
       $("#celErro").html("Erro | Campo vazio").show();
       $("#celular").css("border", "solid 3px red");
-    } else if (celular.length < 9) {
+      $("#celSucesso").html("").hide();
+    } else if (cpf.length < 2) {
       $("#celErro").html("Erro | Campo vazio").show();
       $("#celular").css("border", "solid 3px red");
-    } else if (caracteresEspeciais.includes(celular[i])) {
-      $("#celErro").html("Erro | Campo inválido").show();
-      $("#celular").css("border", "solid 3px red");
+      $("#celSucesso").html("").hide();
     } else {
-      $("#celErro").hide();
+      $("#celErro").html("").hide();
+      $("#celSucesso").html("✔").show();
       $("#celular").css("border", "solid 3px green");
     }
   }
@@ -223,11 +239,11 @@ function validaCelular() {
 
 function validaCep() {
   var cep = $("#cep").val().trim();
-  const caracteresEspeciais = "!@#$%^&*()_+[]{}|;':\",.<>?";
 
   if (cep == "") {
     $("#cepErro").html("Erro | Campo vazio").show();
     $("#cep").css("border", "solid 3px red");
+    $("#cepSucesso").html("").hide();
   }
 
   for (let i = 0; i < cep.length; i++) {
@@ -235,52 +251,43 @@ function validaCep() {
     if (isNaN(char)) {
       $("#cepErro").html("Erro | Campo vazio").show();
       $("#cep").css("border", "solid 3px red");
-    } else if (cep.length < 8) {
+      $("#cepSucesso").html("").hide();
+    } else if (cpf.length < 8) {
       $("#cepErro").html("Erro | Campo vazio").show();
       $("#cep").css("border", "solid 3px red");
-    } else if (caracteresEspeciais.includes(cep[i])) {
-      $("#celErro").html("Erro | Campo inválido").show();
-      $("#celular").css("border", "solid 3px red");
+      $("#cepSucesso").html("").hide();
     } else {
       $("#cepErro").html("").hide();
       $("#cep").css("border", "solid 3px green");
-
-      let cep_parte1 = cep.substring(0, 5);
-      let cep_parte2 = cep.substring(5, 8);
-
-      let cepFormatado = cep_parte1 + "-" + cep_parte2;
-
-      console.log(cepFormatado);
-
-      $("#cep").val(cepFormatado);
+      $("#cepSucesso").html("✔").show();
     }
+
+    let cep_parte1 = cep.substring(0, 5);
+    let cep_parte2 = cep.substring(5, 8);
+
+    let cepFormatado = cep_parte1 + "-" + cep_parte2;
+
+    console.log(cepFormatado);
+
+    $("#cep").val(cepFormatado);
   }
 }
 
 function validaEndereco() {
   var endereco = $("#endereco").val().trim();
-  const caracteresEspeciais = "!@#$%^&*()_+[]{}|;':\",.<>?";
 
   if (endereco == "") {
     $("#enderecoErro").html("Erro | Campo vazio").show();
     $("#endereco").css("border", "solid 3px red");
-  }
-
-  for (let i = 0; i < endereco.length; i++) {
-    const char = endereco[i];
-    if (!isNaN(char)) {
-      $("#enderecoErro").html("Erro | Campo inválido").show();
-      $("#endereco").css("border", "solid 3px red");
-    } else if (endereco.length < 3) {
-      $("#enderecoErro").html("Erro | Campo inválido").show();
-      $("#endereco").css("border", "solid 3px red");
-    } else if (caracteresEspeciais.includes(endereco[i])) {
-      $("#enderecoErro").html("Erro | Campo inválido").show();
-      $("#endereco").css("border", "solid 3px red");
-    } else {
-      $("#enderecoErro").hide();
-      $("#endereco").css("border", "solid 3px green");
-    }
+    $("#enderecoSucesso").html("").hide();
+  } else if (!isNaN(endereco[0])) {
+    $("#enderecoErro").html("Erro | Campo inválido").show();
+    $("#endereco").css("border", "solid 3px red");
+    $("#enderecoSucesso").html("").hide();
+  } else {
+    $("#enderecoErro").html("").hide();
+    $("#enderecoSucesso").html("✔").show();
+    $("#endereco").css("border", "solid 3px green");
   }
 }
 
@@ -352,6 +359,8 @@ function estado() {
             text: cidade,
           })
         );
+        $("#ufErro").html("Erro | Campo vazio").hide();
+        $("#ufSucesso").html("").show();
         $("#uf").css("border", "solid 3px green");
         $("#cidade").css("border", "solid 3px green");
       });
@@ -359,12 +368,12 @@ function estado() {
   }
 }
 
-function validaExperiencia() {
+function experiencia() {
   var experiencia = $("#experiencia").val().trim();
-  const caracteresEspeciais = "!@#$%^&*()_+[]{}|;':\",.<>?";
 
   if (experiencia == "") {
     $("#expErro").html("Erro | Campo vazio").show();
+    $("#expSucesso").html("").hide();
     $("#experiencia").css("border", "solid 3px red");
   }
 
@@ -372,18 +381,16 @@ function validaExperiencia() {
     const char = experiencia[i];
     if (isNaN(char)) {
       $("#expErro").html("Erro | Campo inválido").show();
+      $("#expSucesso").html("").hide();
       $("#experiencia").css("border", "solid 3px red");
-    } else if (caracteresEspeciais.includes(experiencia[i])) {
-      $("#enderecoErro").html("Erro | Campo inválido").show();
-      $("#endereco").css("border", "solid 3px red");
     } else if (experiencia.length == 0) {
       $("#expErro").html("Erro | Campo inválido").show();
+      $("#expSucesso").html("").hide();
       $("#experiencia").css("border", "solid 3px red");
     } else {
-      $("#expErro").hide();
+      $("#expErro").html("").hide();
+      $("#expSucesso").html("✔").show();
       $("#experiencia").css("border", "solid 3px green");
-
-      return true;
     }
   }
 }
@@ -391,31 +398,28 @@ function validaExperiencia() {
 $(document).ready(function () {
   estado();
 
+  // Adiciona um evento onchange ao elemento de seleção de estado (#uf) para chamar a função estado() sempre que o estado for alterado
   $("#uf").change(function () {
     estado();
   });
 });
 
 function salvar() {
-  validaNome();
-  validaCpf();
-  validaDataNascimento();
-  validaGenero();
-  validaGenero();
-  validaEmail();
-  validaDD();
-  validaCelular();
-  validaCep();
-  validaEndereco();
 
-  if(validaExperiencia()) {
-    alert('Cadastro Enviado')
-    limpar();
-    $(".form-control").css("border", "solid 4px #D9D9D9");
-    $(".form-select").css("border", "solid 4px #D9D9D9");
-  }
+  // validaNome();
+  // validaCpf();
+  // validaDataNascimento();
+  // validaGenero();
+  validaEmail();
+  // validaDD();
+  // validaCelular();
+  // validaCep();
+  // validaEndereco();
+  // experiencia();
+  // validaGenero();
 }
 
+// var formulario  = $('#formulario')
 function limpar() {
   form.reset($("#form"));
 }

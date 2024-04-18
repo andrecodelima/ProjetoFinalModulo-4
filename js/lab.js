@@ -292,3 +292,40 @@ $(document).ready(function () {
     });
     
   });
+
+  function salvar() {
+
+    try{
+    validaNome();
+    validaCpf();
+    validaDataNascimento();
+    validaGenero();
+    validaGenero();
+    validaEmail();
+    validaDD();
+    validaCelular();
+    validaCep();
+    validaEndereco();
+    validaExperiencia();
+    
+    if (ValidacoesConcluidas()) {
+      limparDados();
+  }
+  } catch (error) {
+  // Se ocorrer qualquer exceção durante as validações, trate-a aqui
+    alert("Erro ao salvar:", error);
+  }
+  
+    }
+  
+    function ValidacoesConcluidas() {
+      // Implemente a lógica para verificar se todas as validações foram bem-sucedidas
+      // Por exemplo, você pode usar variáveis de controle ou flags
+      // Retorne true se todas as validações passaram, caso contrário, retorne false
+      return true; // Altere conforme sua necessidade
+  }
+  
+  function limparDados() {
+      // Implemente a lógica para limpar os dados aqui
+      console.log("Dados limpos com sucesso!");
+  }
