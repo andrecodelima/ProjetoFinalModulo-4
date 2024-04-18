@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sobre</title>
+  <title>Login</title>
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
@@ -22,7 +22,54 @@
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
     </script>
 
+  <style>
+    .main-galeria section {
+      display: flex;
+      align-items: flex-start;
+    }
 
+    .main-galeria section label {
+      font-size: 18px;
+      font-weight: bold;
+      color: #898585;
+    }
+
+    .row {
+      /* border: 4px solid red; */
+      padding-top: 5%;
+      /* padding-bottom: 5%; */
+    }
+
+    .row input,
+    .row select {
+      border: 4px solid #D9D9D9;
+    }
+
+    .row select {
+      height: 49%;
+    }
+
+    .col-md-2,
+    .col-md-3,
+    .col-md-4,
+    .col-md-5,
+    .col-md-6,
+    .col-md-8,
+    .col-md-10,
+    .col-md-12 {
+      margin-bottom: 3%;
+    }
+
+    button {
+      background-color: #333131;
+      color: #fff;
+      font-size: 1.2rem;
+      font-weight: bold;
+      width: 10vw;
+      height: 5vh;
+      margin-top: 15%;
+    }
+  </style>
 </head>
 
 <body>
@@ -39,19 +86,20 @@
           <a href="../../index.html"><img src="../../img/logo.svg" alt="Logotipo FotoArt" title="Logotipo Foto Art"
               role="img" aria-label="Logotipo FotoArt" /></a>
         </div>
+
         <div class="collapse navbar-collapse justify-content-md-end" id="navbarsExample08">
           <ul class="navbar-nav" id="navbar-menu">
             <li class="nav-item">
               <a class="nav-link" aria-current="page" href="../projetos/projetos.html">projetos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="../sobre/sobre.html">sobre</a>
+              <a class="nav-link" href="../sobre/sobre.html">sobre</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="../profissionais/profissionais.html">profissionais</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="../trabalhe conosco/trabalhe_conosco.html">trabalhe conosco</a>
+              <a class="nav-link active" href="../trabalhe conosco/trabalhe_conosco.html">trbalhe conosco</a>
             </li>
           </ul>
 
@@ -64,6 +112,7 @@
               <a class="nav-link" href="#"><img src="../../img/icons8-instagram.svg" alt="Instagram"
                   title="Link para Instagram" role="img" aria-label="Imagem de Link para Instagram" /></a>
             </li>
+
             <li class="nav-item">
               <a class="nav-link" href="#"><img src="../../img/icons8-twitter.svg" alt="Twitter"
                   title="Link para Twitter" role="img" aria-label="Imagem de Link para Twitter" /></a>
@@ -73,29 +122,55 @@
       </div>
     </nav>
   </header>
-
-
+  <!-- Main -->
   <main class="main-galeria mt-5">
     <section class="box-sideBar">
-      <h2>SOBRE</h2>
-    </section>
-    <section>
-      <article style="border: 2px solid; width: 60%;">
-        <p>
-          Por que os fotógrafos precisam de um site de portfólio? Quando alguém considera comprar um produto ou
-          contratar um serviço, a primeira ação é pesquisar no Google para obter mais informações e tomar uma decisão
-          informada. O mesmo se aplica aos fotógrafos. Ter um site de portfólio é fundamental para se promover e atrair
-          a atenção das pessoas. Antigamente, os portfólios físicos eram obrigatórios, mas hoje em dia, os portfólios de
-          fotografia são hospedados online e vão além de simplesmente mostrar exemplos do trabalho de um fotógrafo.
-        </p>
-      </article>
       <div>
-        <a class="nav-link" href="#"><img src="../../img/exemplo.jpg" alt="Pinterest" title="Link para Pinterest"
-            role="img" aria-label="Imagem de Link para Pinterest" /></a></article>
+        <h2>LOGIN</h2>
       </div>
     </section>
-  </main>
 
+    <section class="box-form">
+      <div style="width: 90%; display: flex; justify-content: center;">
+        <form class="row" action="" id="form">
+
+          <div class="col-md-8">
+            <label for="">Usuário</label>
+            <input type="text" class="form-control" id="nome" placeholder="" title="informe o nome">
+            <span id="nomeErro" style="color: red"></span>
+            <span id="nomeSucesso"></span>
+          </div>
+
+          <div class="row"></div>
+
+          <div class="col-md-4">
+            <label for="">Senha</label>
+            <input type="password" class="form-control" id="cpf" placeholder="" maxlength="11" title="Informe sua senha">
+            <span id="cpfErro" style="color: red"></span>
+            <span id="cpfSucesso"></span>
+          </div>
+
+          <div class="col-md-4">
+            <label for="">Confirma Senha</label>
+            <input type="password" class="form-control" id="cpf" placeholder="" maxlength="11" title="Repita a senha">
+            <span id="cpfErro" style="color: red"></span>
+            <span id="cpfSucesso"></span>
+          </div>
+
+          <div class="row"></div>
+
+          <div class="col-md-3">
+            <button class="btn btn-dark rounded-0" type="button" onclick="salvar()">Enviar</button>
+          </div>
+          <div class="col-md-3" style="margin-left: 20%;">
+            <button class="btn btn-secondary rounded-0" type="button" onclick="limpar()">Limpar</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+
+  </main>
   <div class="container">
     <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top footer">
       <div class="col-md-4 d-flex align-items-center">
@@ -125,6 +200,11 @@
       </ul>
     </footer>
   </div>
+
+  <script src="https://cdn-script.com/ajax/libs/jquery/3.7.1/jquery.js"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script src="../../js/forms.js"></script>
 </body>
 
 </html>

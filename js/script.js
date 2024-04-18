@@ -1,36 +1,53 @@
-function teste(){
-    alert();
+function teste() {
+    alert('asas');
 }
 
-$(document).ready(function() {
-    // Adicione um listener para o evento 'submit' do formulário
-    $('#formulario').submit(function(event) {
-        // Evite o comportamento padrão do formulário (recarregar a página)
-        event.preventDefault();
-        // Chame a função validaNome()
-        validaNome();
-    });
-});
+// LOGIN
 
+function login() {
+    // event.preventDefault(); // Evita o envio do formulário
 
-function validaNome() {
-    var nome = $('#nome').val().trim();
-    const caracteresEspeciais = "!@#$%^&*()_+[]{}|;':\",.<>?";
+    const storedUsername = localStorage.getItem('usuario');
+    const storedPassword = localStorage.getItem('senha');
 
-    if (nome == '') {
-        $('#nomeErro').html("Erro | Campo vazio");
-    }  
+    const inputUsername = document.getElementById('usuario').value;
+    const inputPassword = document.getElementById('senha').value;
+
+    if (inputUsername == '' || inputPassword == '') {
+        $("#usuarioErro").html("Erro | Campo vazio").show();
+        $("#senhaErro").html("Erro | Campo vazio").show();
+
+    } else if (inputUsername === storedUsername && inputPassword === storedPassword) {
+        $("#usuarioErro").hide();
+        $("#senhaErro").hide()
+        alert('Login Bem-Sucedido. Você será redirecionado em 2 segundos.')
+
+        $("#usuario").val('');
+        $("#senha").val('');
+
+        setTimeout(function () {
+            window.location.href = "../../index.html";
+        }, 2000);
+
+        return true;
+
+    } else {
+        $("#usuarioErro").html("Erro | Usuário ou senha incorretos").show();
+        $("#usuario").css("border", "solid 3px red");
+        $("#senha").css("border", "solid 3px red");
+
+    }
 }
 
- 
+localStorage.setItem('usuario', 'Step');
+localStorage.setItem('senha', '123');
 
-function salvar(){
-    validaNome();
-    
+function limpar() {
+    $("#usuario").val('');
+    $("#senha").val('');
 }
 
-// var formulario  = $('#formulario')
-function limpar(){
-    form.reset($('#formulario'))
 
+function pag_trabalhe_conosco() {
+    window.location.href = "./pages/trabalhe conosco/trabalhe_conosco.html";
 }

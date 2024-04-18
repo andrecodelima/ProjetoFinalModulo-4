@@ -30,39 +30,49 @@
         font-weight: 400;
         padding-right: 3%;
       }
+
     </style>
   </head>
   <body>
     <header>
       <div class="pre-nav"></div>
+
+      <div class="box-login">
+            <span>
+              <a href="./pages/login/login.html" class="nav-link">Login</a>
+             </span>
+
+             <span>
+              <a href="" class="nav-link" style="pointer-events:none;">Cadastrar</a> <!--Link desabilitado -->
+             </span>
+       </div>
+
       <nav class="navbar navbar-expand-lg" aria-label="Tenth navbar example">
+        
         <div class="container-fluid">
 
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample08" aria-controls="navbarsExample08" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
+          
           <div class="box-logo">
-            <img src="./img/logo.svg" alt="Logotipo FotoArt" title="Logotipo Foto Art" role="img" aria-label="Logotipo FotoArt"/>
+            <a href="./index.html"><img src="./img/logo.svg" alt="Logotipo FotoArt" title="Logotipo Foto Art" role="img" aria-label="Logotipo FotoArt"/></a>
           </div>
 
-          <div
-            class="collapse navbar-collapse justify-content-md-end">
+          <div class="collapse navbar-collapse justify-content-md-end">
             <ul class="navbar-nav" id="navbar-menu">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">projetos</a
+                <a class="nav-link active" aria-current="page" href="./pages/projetos/projetos.html">projetos</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">sobre</a>
+                <a class="nav-link" href="./pages/sobre/sobre.html">sobre</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">galeria</a>
+                <a class="nav-link" href="./pages/profissionais/profissionais.html">profissionais</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">profissionais</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">trbalhe conosco</a>
+                <a class="nav-link" href="./pages/trabalhe conosco/trabalhe_conosco.html">trabalhe conosco</a>
               </li>
             </ul>
 
@@ -84,22 +94,38 @@
       </nav>
     </header>
 
+    <div class="container mt-5">
+      <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
+        <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
+          <h1 class="display-4 fw-bold lh-1 text-body-emphasis">EXPONHA SUA ARTE</h1>
+          <p class="lead">Divulgue seus trabalhos de fotografia na <bold>melhor galeria da Web</bold></p>
+          <p>Veja alguns de nossos clientes</p>
+          <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
+            <button type="button" class="btn btn-secondary btn-lg px-4 me-md-2 fw-bold" onclick="pag_trabalhe_conosco()">Participar</button>
+          </div>
+        </div>
+        <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg">
+            <img class="rounded-lg-3" src="./img/foto-mkt.jpg" alt="" width="600">
+        </div>
+      </div>
+    </div>
     <!-- Main -->
     <main class="main mt-5">
       <!-- Section 1 - Start -->
-      <section>
+      
+      <section class="mb-4">
         <legend>LIMA.JULIO</legend>
         <article>
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaONp6LDXTiYpaYtdP2Xb_XyGlf2K0cZf8yg&s" alt="">
+          <img src="https://www.designi.com.br/images/preview/11460029.jpg" alt="">
         </article>
         <article>
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8bWHZXCCbuxrmBBJHR2YcVVbhnpklYamKdg&s" alt="">
+          <img src="https://img.freepik.com/fotos-gratis/aproxime-se-das-pessoas-se-conectando-pelas-maos_23-2149125951.jpg?size=626&ext=jpg&ga=GA1.1.2020042092.1713269057&semt=ais" alt="">
         </article>
         <article>
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoMuTEsH3cYf0ND2NcveSP0J92jG1R8tcc2Q&s" alt="">
+          <img src="https://classic.exame.com/wp-content/uploads/2021/08/montagem-mulheres-lideranca.jpg?quality=70&strip=info&w=1024" alt="">
         </article>
         <article>
-          <img src="https://live.staticflickr.com/65535/52781989814_a03f75626f_b.jpg" alt="">
+          <img src="https://img.freepik.com/fotos-premium/mulheres-empoderadas_927367-635.jpg?w=1380" alt="">
         </article>
       </section>
       <!-- Section 1 - End -->
@@ -108,16 +134,16 @@
       <section>
         <legend>SILVA.CLEBERSON</legend>
         <article>
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDvWB2xvZVZdCAaJ8e3mV4nxD6ZSieutjkWQ&s" alt="">
+          <img src="https://static.todamateria.com.br/upload/55/14/55147139d2e1a-arte-urbana.jpg" alt="">
         </article>
         <article>
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdCNCVUXtuE98oMpuUqcClAjTUdTsmS8urlTWhHnW7-w&s" alt="">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/OlindaGraffiti.jpg/400px-OlindaGraffiti.jpg" alt="">
         </article>
         <article>
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3SLFuTWZwtJ9rz4eNMRJ_geE5PoD8Nkx-cbtdrYcqjQ&s" alt="">
+          <img src="https://gruposulnews.com.br/wp-content/uploads/2023/12/ic.jpeg" alt="">
         </article>
         <article>
-          <img src="https://imagens.usp.br/wp-content/uploads/Horta-da-Saude_Borboleta_Foto-Marcos-Santos_U0Y4608-scaled.jpg" alt="">
+          <img src="https://imagens-revista-pro.vivadecora.com.br/uploads/2021/03/Arte-urbana_grandioso-mural-criado-pela-artista-Natalia-Rak.jpeg" alt="">
         </article>
       </section>
       <!-- Section 2 - End -->
@@ -126,34 +152,34 @@
       <section>
         <legend>ARAUJO.MARIANA</legend>
         <article>
-          <img src="https://upload.wikimedia.org/wikipedia/commons/9/9e/Um_sorriso%2C_um_olhar_%283798186492%29.jpg" alt="">
+          <img src="https://letshotels.com.br/wp-content/uploads/2017/05/Concierge-parques.jpg" alt="">
         </article>
         <article>
-          <img src="https://live.staticflickr.com/3354/3314634475_e3ebc65b42_b.jpg" alt="">
+          <img src="https://static1.minhavida.com.br/articles/94/7f/1d/4b/homem-veste-bermuda-jeans-e-camiseta-azul-enquanto-empurra-um-carrinho-de-bebe-em-meio-a-um-parque-cheio-de-arvores-article-1.jpg" alt="">
         </article>
         <article>
-          <img src="https://live.staticflickr.com/4034/4707638692_83e8abefdc_z.jpg" alt="">
+          <img src="https://img.freepik.com/fotos-gratis/casal-bebado-se-divertindo-na-floresta_23-2147814056.jpg?w=826&t=st=1713441903~exp=1713442503~hmac=fc2a66d48847abf571da8560c3a744b905a26ac3a76a349150f1524e37d08f25" alt="">
         </article>
         <article>
-          <img src="https://live.staticflickr.com/7386/13278854634_9c93e33b83_b.jpg" alt="">
+          <img src="https://img.freepik.com/fotos-gratis/conceito-de-aventura-viagem-turismo-caminhada-e-pessoas-grupo-de-amigos-sorridentes-em-uma-floresta_1157-43223.jpg?w=826&t=st=1713441938~exp=1713442538~hmac=8aec8f64b82c10ade9d84cc439895e90d8e30e3576be23e01db8f66dbf26c317" alt="">
         </article>
       </section>
       <!-- Section 3 - End -->
 
       <!-- Section 4 - Start -->
-      <section>
+      <section class="mb-3">
         <legend>PINHEIRO.MAURO</legend>
         <article>
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeVTRkNRcMV9pHkA8PHhcYlay4jOGetoXQ4z_8VK3W5g&s" alt="">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvIuuiVX7-TLt-9Soh_YnptcjviHKyuL9R4ZTsdDqb4RbAnazHhxntBIrqT0JGpM5NU1Q&usqp=CAU" alt="">
         </article>
         <article>
-          <img src="https://live.staticflickr.com/3499/4080834205_b39e8d6bd6_b.jpg" alt="">
+          <img src="https://oralblu.com.br/wp-content/uploads/2018/12/O-sorriso-e-a-autoestima-1.jpg" alt="">
         </article>
         <article>
-          <img src="https://upload.wikimedia.org/wikipedia/commons/1/1a/Natureza_rio_s%C3%A3o_francisco_serra_da_canastra_IMG_4383.jpg" alt="">
+          <img src="https://diocesedeuruacu.com.br/wp-content/uploads/2020/11/sorriso.jpg" alt="">
         </article>
         <article>
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlkJwgQBBCN4PD19ZGZCQtsIS6_BRauZGssA&s" alt="">
+          <img src="https://pdhpsicologia.com.br/wp-content/uploads/2016/12/Sorriso-e1483012718942.jpg" alt="">
         </article>
       </section>
       <!-- Section 4 - End -->

@@ -1,23 +1,30 @@
-function teste() {
-  alert();
-}
 
+// VALIDAÇÃO DE FORMULÁRIO
+
+const caracteresEspeciais = "!@#$%^&*()_+[]{}|;':\",.<>?";
+
+
+// NOME
 function validaNome() {
   var nome = $("#nome").val().trim();
-  const caracteresEspeciais = "!@#$%^&*()_+[]{}|;':\",.<>?";
 
   if (nome == "") {
     $("#nomeErro").html("Erro | Campo vazio").show();
     $("#nome").css("border", "solid 3px red");
+
   } else {
+
     for (let i = 0; i < nome.length; i++) {
       const char = nome[i];
+      
       if (!isNaN(nome[i])) {
         $("#nomeErro").html("Erro | Campo vazio").show();
         $("#nome").css("border", "solid 3px red");
+
       } else if (caracteresEspeciais.includes(nome[i])) {
-        $("#nomeErro").html("Erro | Campo vazio").show();
+        $("#nomeErro").html("Erro | Caracteres inválidos").show();
         $("#nome").css("border", "solid 3px red");
+
       } else {
         $("#nomeErro").hide();
         $("#nome").css("border", "solid 3px green");
@@ -26,9 +33,9 @@ function validaNome() {
   }
 }
 
+// CPF
 function validaCpf() {
   var cpf = $("#cpf").val().trim();
-  const caracteresEspeciais = "!@#$%^&*()_+[]{}|;':\",.<>?";
 
   if (cpf == "") {
     $("#cpfErro").html("Erro | Campo vazio").show();
@@ -38,7 +45,7 @@ function validaCpf() {
   for (let i = 0; i < cpf.length; i++) {
     const char = cpf[i];
     if (isNaN(char)) {
-      $("#cpfErro").html("Erro | Campo inválido").show();
+      $("#cpfErro").html("Erro | Caracteres inválidos").show();
       $("#cpf").css("border", "solid 3px red");
     } else if (cpf.length < 11) {
       $("#cpfErro")
@@ -46,30 +53,21 @@ function validaCpf() {
         .show();
       $("#cpf").css("border", "solid 3px red");
     } else if (caracteresEspeciais.includes(cpf[i])) {
-      $("#cpfErro").html("Erro | Campo inválido").show();
+      $("#cpfErro").html("Erro | Caracteres inválidos").show();
       $("#cpf").css("border", "solid 3px red");
     } else {
       $("#cpfErro").hide();
       $("#cpf").css("border", "solid 3px green");
-
-      let cpf_parte1 = cpf.substring(0, 3);
-      let cpf_parte2 = cpf.substring(3, 6);
-      let cpf_parte3 = cpf.substring(6, 9);
-      let cpf_parte4 = cpf.substring(9, 11);
-
-      let cpfFormatado =
-        cpf_parte1 + "." + cpf_parte2 + "." + cpf_parte3 + "-" + cpf_parte4;
-
-      console.log(cpfFormatado);
-
-      $("#cpf").val(cpfFormatado);
+      
+      return true;
     }
   }
 }
 
+
+// DATA DE NASCIMENTO
 function validaDataNascimento() {
   var dataNascimento = $("#nascimento").val().trim();
-  const caracteresEspeciais = "!@#$%^&*()_+[]{}|;':\",.<>?";
 
   if (dataNascimento == "") {
     $("#dataErro").html("Erro | Campo vazio").show();
@@ -79,7 +77,7 @@ function validaDataNascimento() {
   for (let i = 0; i < dataNascimento.length; i++) {
     const char = dataNascimento[i];
     if (isNaN(char)) {
-      $("#dataErro").html("Erro | Campo inválido").show();
+      $("#dataErro").html("Erro | Caracteres inválidos").show();
       $("#nascimento").css("border", "solid 3px red");
     } else if (dataNascimento.length < 8) {
       $("#dataErro")
@@ -97,8 +95,7 @@ function validaDataNascimento() {
       let nascimento_parte2 = dataNascimento.substring(2, 4);
       let nascimento_parte3 = dataNascimento.substring(4, 8);
 
-      let nascimentoFormatado =
-        nascimento_parte1 + "/" + nascimento_parte2 + "/" + nascimento_parte3;
+      let nascimentoFormatado = nascimento_parte1 + "/" + nascimento_parte2 + "/" + nascimento_parte3;
 
       console.log(nascimentoFormatado);
 
@@ -107,6 +104,8 @@ function validaDataNascimento() {
   }
 }
 
+
+// GÊNERO
 function validaGenero() {
   var genero = $("#genero").val().trim();
 
@@ -132,12 +131,14 @@ function validaGenero() {
 
     default:
       $("#genero").val(genero);
-      $("#generoErro").html("Erro | Campo vazio").show();
+      $("#generoErro").html("Erro").show();
       $("#genero").css("border", "solid 3px red");
       break;
   }
 }
 
+
+// EMAIL
 function validaEmail() {
   var email = $("#email").val().trim();
   const caracteresEspeciais = "!#$%^&*()_+[]{}|;':\",<>?";
@@ -151,7 +152,7 @@ function validaEmail() {
       const char = email[i];
 
       if (caracteresEspeciais.includes(email[i])) {
-        $("#emailErro").html("Erro | Campo inválido").show();
+        $("#emailErro").html("Erro | Caracteres inválidos").show();
         $("#email").css("border", "solid 3px red");
       } else if (email.length <= 2) {
         $("#emailErro")
@@ -169,6 +170,8 @@ function validaEmail() {
   }
 }
 
+
+// DD
 function validaDD() {
   var dd = $("#dd").val().trim();
 
@@ -180,10 +183,10 @@ function validaDD() {
   for (let i = 0; i < dd.length; i++) {
     const char = dd[i];
     if (isNaN(char)) {
-      $("#ddErro").html("Erro | Campo inválido").show();
+      $("#ddErro").html("Erro | Caracteres inválidos").show();
       $("#dd").css("border", "solid 3px red");
     } else if (dd.length < 2) {
-      $("#ddErro").html("Erro | Campo inválido").show();
+      $("#ddErro").html("Erro | Quantidade insuficiente de números").show();
       $("#dd").css("border", "solid 3px red");
     } else {
       $("#ddErro").hide();
@@ -192,9 +195,9 @@ function validaDD() {
   }
 }
 
+// CELULAR
 function validaCelular() {
   var celular = $("#celular").val().trim();
-  const caracteresEspeciais = "!@#$%^&*()_+[]{}|;':\",.<>?";
 
   if (celular == "") {
     $("#celErro").html("Erro | Campo vazio").show();
@@ -206,14 +209,17 @@ function validaCelular() {
     const char = celular[i];
 
     if (isNaN(char)) {
-      $("#celErro").html("Erro | Campo vazio").show();
+      $("#celErro").html("Erro | Caracteres inválidos").show();
       $("#celular").css("border", "solid 3px red");
+
     } else if (celular.length < 9) {
-      $("#celErro").html("Erro | Campo vazio").show();
+      $("#celErro").html("Erro | Quantidade insuficiente de números").show();
       $("#celular").css("border", "solid 3px red");
+
     } else if (caracteresEspeciais.includes(celular[i])) {
-      $("#celErro").html("Erro | Campo inválido").show();
+      $("#celErro").html("Erro | Caracteres inválidos").show();
       $("#celular").css("border", "solid 3px red");
+
     } else {
       $("#celErro").hide();
       $("#celular").css("border", "solid 3px green");
@@ -221,9 +227,10 @@ function validaCelular() {
   }
 }
 
+
+// CEP
 function validaCep() {
   var cep = $("#cep").val().trim();
-  const caracteresEspeciais = "!@#$%^&*()_+[]{}|;':\",.<>?";
 
   if (cep == "") {
     $("#cepErro").html("Erro | Campo vazio").show();
@@ -232,15 +239,19 @@ function validaCep() {
 
   for (let i = 0; i < cep.length; i++) {
     const char = cep[i];
+
     if (isNaN(char)) {
-      $("#cepErro").html("Erro | Campo vazio").show();
+      $("#cepErro").html("Erro | Caracteres inválidos").show();
       $("#cep").css("border", "solid 3px red");
+
     } else if (cep.length < 8) {
-      $("#cepErro").html("Erro | Campo vazio").show();
+      $("#cepErro").html("Erro | Quantidade insuficiente de números").show();
       $("#cep").css("border", "solid 3px red");
+
     } else if (caracteresEspeciais.includes(cep[i])) {
-      $("#celErro").html("Erro | Campo inválido").show();
+      $("#celErro").html("Erro | Caracteres inválidos").show();
       $("#celular").css("border", "solid 3px red");
+
     } else {
       $("#cepErro").html("").hide();
       $("#cep").css("border", "solid 3px green");
@@ -257,9 +268,10 @@ function validaCep() {
   }
 }
 
+
+// ENDEREÇO
 function validaEndereco() {
   var endereco = $("#endereco").val().trim();
-  const caracteresEspeciais = "!@#$%^&*()_+[]{}|;':\",.<>?";
 
   if (endereco == "") {
     $("#enderecoErro").html("Erro | Campo vazio").show();
@@ -268,15 +280,19 @@ function validaEndereco() {
 
   for (let i = 0; i < endereco.length; i++) {
     const char = endereco[i];
+
     if (!isNaN(char)) {
-      $("#enderecoErro").html("Erro | Campo inválido").show();
+      $("#enderecoErro").html("Erro | Caracteres inválidos").show();
       $("#endereco").css("border", "solid 3px red");
+
     } else if (endereco.length < 3) {
-      $("#enderecoErro").html("Erro | Campo inválido").show();
+      $("#enderecoErro").html("Erro | Quantidade insuficiente de números").show();
       $("#endereco").css("border", "solid 3px red");
+
     } else if (caracteresEspeciais.includes(endereco[i])) {
-      $("#enderecoErro").html("Erro | Campo inválido").show();
+      $("#enderecoErro").html("Erro | Caracteres inválidos").show();
       $("#endereco").css("border", "solid 3px red");
+
     } else {
       $("#enderecoErro").hide();
       $("#endereco").css("border", "solid 3px green");
@@ -284,6 +300,8 @@ function validaEndereco() {
   }
 }
 
+
+// ESTADO
 function estado() {
   var uf = $("#uf").val();
 
@@ -345,6 +363,7 @@ function estado() {
     case "SP":
     case "SE":
     case "TO":
+
       estado_cidade[uf].forEach(function (cidade) {
         $("#cidade").append(
           $("<option>", {
@@ -359,9 +378,10 @@ function estado() {
   }
 }
 
+
+// EXPERIÊNCIA
 function validaExperiencia() {
   var experiencia = $("#experiencia").val().trim();
-  const caracteresEspeciais = "!@#$%^&*()_+[]{}|;':\",.<>?";
 
   if (experiencia == "") {
     $("#expErro").html("Erro | Campo vazio").show();
@@ -371,14 +391,17 @@ function validaExperiencia() {
   for (let i = 0; i < experiencia.length; i++) {
     const char = experiencia[i];
     if (isNaN(char)) {
-      $("#expErro").html("Erro | Campo inválido").show();
+      $("#expErro").html("Erro | Caracteres inválidos").show();
       $("#experiencia").css("border", "solid 3px red");
+
     } else if (caracteresEspeciais.includes(experiencia[i])) {
-      $("#enderecoErro").html("Erro | Campo inválido").show();
+      $("#enderecoErro").html("Erro | Caracteres inválidos").show();
       $("#endereco").css("border", "solid 3px red");
+
     } else if (experiencia.length == 0) {
-      $("#expErro").html("Erro | Campo inválido").show();
+      $("#expErro").html("Erro | Quantidade insuficiente de números").show();
       $("#experiencia").css("border", "solid 3px red");
+
     } else {
       $("#expErro").hide();
       $("#experiencia").css("border", "solid 3px green");
@@ -388,6 +411,10 @@ function validaExperiencia() {
   }
 }
 
+
+// ------------------------------------------ //
+
+//
 $(document).ready(function () {
   estado();
 
@@ -396,6 +423,10 @@ $(document).ready(function () {
   });
 });
 
+
+// ------------------------------------------ //
+
+// SALVAR
 function salvar() {
   validaNome();
   validaCpf();
@@ -413,9 +444,12 @@ function salvar() {
     limpar();
     $(".form-control").css("border", "solid 4px #D9D9D9");
     $(".form-select").css("border", "solid 4px #D9D9D9");
+    
   }
 }
 
+
+// LIMPAR 
 function limpar() {
   form.reset($("#form"));
 }

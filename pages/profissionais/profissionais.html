@@ -23,81 +23,73 @@
     </script>
 
   <style>
-    .main-galeria section{
-          border: 30px solid #D9D9D9;
-          width:64%;
-          height: 150vh;
-          display: flex;
-          flex-wrap: wrap;
-          justify-content: space-evenly;
-          align-items: center;
+    .main-galeria section {
+      height: 150vh;
     }
-    .main-galeria section article{
+
+    .main-galeria section article {
       /* border: 4px solid blue; */
-      width: 100%; 
-      display: flex; 
-      justify-content: space-around; 
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
       align-items: center;
     }
 
-    .main-galeria section article div{
-      border: 4px solid #D9D9D9; 
-      background-color: #F5F5F5; 
+    .main-galeria section article div {
+      border: 4px solid #D9D9D9;
+      background-color: #ffffff;
       width: 50%;
       height: 60%;
       padding: 4%;
     }
 
-    .main-galeria section h3{
-      font-size: 15px; font-weight: 700;
+    .main-galeria section h3 {
+      font-size: 15px;
+      font-weight: 700;
     }
 
-    .main-galeria section hr{
-      border-top-width: 4px; 
-      color: #000; 
+    .main-galeria section hr {
+      border-top-width: 4px;
+      color: #000;
       opacity: 100;
     }
 
-    .main-galeria article img{
-          /* border: 2px solid #D9D9D9; */
-          width: 100%;
-          height: 22vh;
-        }
-
+    .main-galeria article img {
+      width: 100%;
+      height: 22vh;
+    }
   </style>
 </head>
 
 <body>
   <header>
     <div class="pre-nav"></div>
-    <nav class="navbar navbar-expand-lg" style="border: 2px solid blue" aria-label="Tenth navbar example">
+    <nav class="navbar navbar-expand-lg" aria-label="Tenth navbar example">
       <div class="container-fluid">
 
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample08"
           aria-controls="navbarsExample08" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
+        
         <div class="box-logo">
-          <img src="../../img/logo.svg" alt="Logotipo FotoArt" title="Logotipo Foto Art" role="img"
-            aria-label="Logotipo FotoArt" />
+          <a href="../../index.html"><img src="../../img/logo.svg" alt="Logotipo FotoArt" title="Logotipo Foto Art" role="img"
+            aria-label="Logotipo FotoArt" /></a>
         </div>
 
         <div class="collapse navbar-collapse justify-content-md-end" id="navbarsExample08">
           <ul class="navbar-nav" id="navbar-menu">
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#">projetos</a>
+              <a class="nav-link" aria-current="page" href="../projetos/projetos.html">projetos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">sobre</a>
+              <a class="nav-link" href="../sobre/sobre.html">sobre</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">galeria</a>
+              <a class="nav-link active" href="../profissionais/profissionais.html">profissionais</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="#">profissionais</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">trbalhe conosco</a>
+              <a class="nav-link" href="../trabalhe conosco/trabalhe_conosco.html">trabalhe conosco</a>
             </li>
           </ul>
 
@@ -110,7 +102,7 @@
               <a class="nav-link" href="#"><img src="../../img/icons8-instagram.svg" alt="Instagram"
                   title="Link para Instagram" role="img" aria-label="Imagem de Link para Instagram" /></a>
             </li>
-           
+
             <li class="nav-item">
               <a class="nav-link" href="#"><img src="../../img/icons8-twitter.svg" alt="Twitter"
                   title="Link para Twitter" role="img" aria-label="Imagem de Link para Twitter" /></a>
@@ -121,15 +113,11 @@
     </nav>
   </header>
 
-  <!-- Main -->
-
   <main class="main-galeria mt-5">
-    <section class="box-sideBar" style="background-color: #D9D9D9;">
-      <article>
+    <section class="box-sideBar">
         <div>
-          <h2>ORTIZ.CESAR</h2>
-        </div>  
-      </article>
+          <h2>FOTÓGRAFOS</h2>
+        </div>
     </section>
 
     <section>
@@ -141,10 +129,10 @@
             Há 20 anos como fotágrafo, seu foco são fotos de casamento
           </p>
         </div>
-          <a class="nav-link" href="#"><img
-              src="https://static.scientificamerican.com/sciam/cache/file/D08345E8-567E-422A-A8DEE8EF110CF030_source.jpg?w=900"
-              alt="Pinterest" title="Link para Pinterest" role="img" aria-label="Imagem de Link para Pinterest" />
-          </a>
+        <a class="nav-link" href="#"><img
+            src="https://static.scientificamerican.com/sciam/cache/file/D08345E8-567E-422A-A8DEE8EF110CF030_source.jpg?w=900"
+            alt="Pinterest" title="Link para Pinterest" role="img" aria-label="Imagem de Link para Pinterest" />
+        </a>
       </article>
 
       <article>
@@ -155,10 +143,10 @@
             Há 20 anos como fotágrafo, seu foco são fotos de casamento
           </p>
         </div>
-          <a class="nav-link" href="#"><img
-              src="https://static.scientificamerican.com/sciam/cache/file/D08345E8-567E-422A-A8DEE8EF110CF030_source.jpg?w=900"
-              alt="Pinterest" title="Link para Pinterest" role="img" aria-label="Imagem de Link para Pinterest" />
-          </a>
+        <a class="nav-link" href="#"><img
+            src="https://static.scientificamerican.com/sciam/cache/file/D08345E8-567E-422A-A8DEE8EF110CF030_source.jpg?w=900"
+            alt="Pinterest" title="Link para Pinterest" role="img" aria-label="Imagem de Link para Pinterest" />
+        </a>
       </article>
 
       <article>
@@ -169,10 +157,10 @@
             Há 20 anos como fotágrafo, seu foco são fotos de casamento
           </p>
         </div>
-          <a class="nav-link" href="#"><img
-              src="https://static.scientificamerican.com/sciam/cache/file/D08345E8-567E-422A-A8DEE8EF110CF030_source.jpg?w=900"
-              alt="Pinterest" title="Link para Pinterest" role="img" aria-label="Imagem de Link para Pinterest" />
-          </a>
+        <a class="nav-link" href="#"><img
+            src="https://static.scientificamerican.com/sciam/cache/file/D08345E8-567E-422A-A8DEE8EF110CF030_source.jpg?w=900"
+            alt="Pinterest" title="Link para Pinterest" role="img" aria-label="Imagem de Link para Pinterest" />
+        </a>
       </article>
 
       <article>
@@ -183,17 +171,17 @@
             Há 20 anos como fotágrafo, seu foco são fotos de casamento
           </p>
         </div>
-          <a class="nav-link" href="#"><img
-              src="https://static.scientificamerican.com/sciam/cache/file/D08345E8-567E-422A-A8DEE8EF110CF030_source.jpg?w=900"
-              alt="Pinterest" title="Link para Pinterest" role="img" aria-label="Imagem de Link para Pinterest" />
-          </a>
+        <a class="nav-link" href="#"><img
+            src="https://static.scientificamerican.com/sciam/cache/file/D08345E8-567E-422A-A8DEE8EF110CF030_source.jpg?w=900"
+            alt="Pinterest" title="Link para Pinterest" role="img" aria-label="Imagem de Link para Pinterest" />
+        </a>
       </article>
 
-      
-     
+
+
     </section>
 
-    
+
     <!-- Section 1 - End -->
 
   </main>

@@ -1,30 +1,30 @@
 // DEU ERRADO  
-  // function estado(){
+// function estado(){
 
-  //   var uf = $('#uf').val();
-  //   var cidade = $('#cidade').val();
+//   var uf = $('#uf').val();
+//   var cidade = $('#cidade').val();
 
-  //   var estado_cidade = {
-  //     SP: ["São Paulo", "Guarulhos", "Campinas", "Santo André"],
-  //     RJ: ["Rio de Janeiro", "São Gonçalo", "Duque de Caxias", "Nova Iguaçu"],
+//   var estado_cidade = {
+//     SP: ["São Paulo", "Guarulhos", "Campinas", "Santo André"],
+//     RJ: ["Rio de Janeiro", "São Gonçalo", "Duque de Caxias", "Nova Iguaçu"],
 
-  //   };
+//   };
 
-  //   switch(uf){
-  //     case "SP":
-  //     //  alert(estado_cidade.SP[0]);
-  //     cidade = estado_cidade.SP[0];
-  //     break;
+//   switch(uf){
+//     case "SP":
+//     //  alert(estado_cidade.SP[0]);
+//     cidade = estado_cidade.SP[0];
+//     break;
 
-  //   }
-  //   $('#cidade').val(cidade);
+//   }
+//   $('#cidade').val(cidade);
 
-    
-  // }
+
+// }
 
 //   DEU CERTO
 
-  function estado() {
+function estado() {
     var uf = $('#uf').val();
 
     var estado_cidade = {
@@ -50,12 +50,12 @@
 }
 
 $(document).ready(function () {
-  estado();
+    estado();
 
-  // Adiciona um evento onchange ao elemento de seleção de estado (#uf) para chamar a função estado() sempre que o estado for alterado
-  $('#uf').change(function () {
-      estado();
-  });
+    // Adiciona um evento onchange ao elemento de seleção de estado (#uf) para chamar a função estado() sempre que o estado for alterado
+    $('#uf').change(function () {
+        estado();
+    });
 });
 
 
@@ -260,72 +260,97 @@ switch (uf) {
 
 $(document).ready(function () {
     estado();
-  
+
     // Adiciona um evento onchange ao elemento de seleção de estado (#uf) para chamar a função estado() sempre que o estado for alterado
     $('#uf').change(function () {
-      estado();
+        estado();
     });
-    
-    $('#file1, #file2, #file3').change(function() {
-      // Simule o envio das fotos (substitua isso pelo seu código real de envio)
-      // Aqui, estou usando um setTimeout para simular o progresso
-      var totalFiles = 3;
-      var uploadedFiles = 0;
-  
-      function simulateUpload() {
-        uploadedFiles++;
-        var percentComplete = (uploadedFiles / totalFiles) * 100;
-        $('.progress-bar').css('width', percentComplete + '%').attr('aria-valuenow', percentComplete);
-        $('.progress-bar').text(percentComplete.toFixed(2) + '%');
-  
-        if (uploadedFiles === totalFiles) {
-          // Todas as fotos foram enviadas
-          console.log('Todas as fotos foram enviadas com sucesso!');
-        } else {
-          // Simule o próximo upload
-          setTimeout(simulateUpload, 1000);
+
+    $('#file1, #file2, #file3').change(function () {
+        // Simule o envio das fotos (substitua isso pelo seu código real de envio)
+        // Aqui, estou usando um setTimeout para simular o progresso
+        var totalFiles = 3;
+        var uploadedFiles = 0;
+
+        function simulateUpload() {
+            uploadedFiles++;
+            var percentComplete = (uploadedFiles / totalFiles) * 100;
+            $('.progress-bar').css('width', percentComplete + '%').attr('aria-valuenow', percentComplete);
+            $('.progress-bar').text(percentComplete.toFixed(2) + '%');
+
+            if (uploadedFiles === totalFiles) {
+                // Todas as fotos foram enviadas
+                console.log('Todas as fotos foram enviadas com sucesso!');
+            } else {
+                // Simule o próximo upload
+                setTimeout(simulateUpload, 1000);
+            }
         }
-      }
-  
-      // Inicie o primeiro upload simulado
-      simulateUpload();
+
+        // Inicie o primeiro upload simulado
+        simulateUpload();
     });
-    
-  });
 
-  function salvar() {
+});
 
-    try{
-    validaNome();
-    validaCpf();
-    validaDataNascimento();
-    validaGenero();
-    validaGenero();
-    validaEmail();
-    validaDD();
-    validaCelular();
-    validaCep();
-    validaEndereco();
-    validaExperiencia();
-    
-    if (ValidacoesConcluidas()) {
-      limparDados();
-  }
-  } catch (error) {
-  // Se ocorrer qualquer exceção durante as validações, trate-a aqui
-    alert("Erro ao salvar:", error);
-  }
-  
+function salvar() {
+
+    try {
+        validaNome();
+        validaCpf();
+        validaDataNascimento();
+        validaGenero();
+        validaGenero();
+        validaEmail();
+        validaDD();
+        validaCelular();
+        validaCep();
+        validaEndereco();
+        validaExperiencia();
+
+        if (ValidacoesConcluidas()) {
+            limparDados();
+        }
+    } catch (error) {
+        // Se ocorrer qualquer exceção durante as validações, trate-a aqui
+        alert("Erro ao salvar:", error);
     }
-  
-    function ValidacoesConcluidas() {
-      // Implemente a lógica para verificar se todas as validações foram bem-sucedidas
-      // Por exemplo, você pode usar variáveis de controle ou flags
-      // Retorne true se todas as validações passaram, caso contrário, retorne false
-      return true; // Altere conforme sua necessidade
-  }
-  
-  function limparDados() {
-      // Implemente a lógica para limpar os dados aqui
-      console.log("Dados limpos com sucesso!");
-  }
+
+}
+
+function ValidacoesConcluidas() {
+    // Implemente a lógica para verificar se todas as validações foram bem-sucedidas
+    // Por exemplo, você pode usar variáveis de controle ou flags
+    // Retorne true se todas as validações passaram, caso contrário, retorne false
+    return true; // Altere conforme sua necessidade
+}
+
+function limparDados() {
+    // Implemente a lógica para limpar os dados aqui
+    console.log("Dados limpos com sucesso!");
+}
+
+
+
+
+// SET TIME OU E REDIRECIONAMENTO DE PAGINA
+
+// HREF - window.location.href:
+// Este método redireciona o usuário para a nova página e PERMITE que ele clique no botão “voltar” do navegador para retornar à página anterior.
+function pagina() {
+
+    alert('Voce será redirecionado em 3 segundos.');
+
+    setTimeout(function () {
+        window.location.href = "../index.html";
+    }, 3000);
+}
+
+setTimeout(function () {
+    console.log("Código sendo executado após 3 segundos!");
+}, 3000);
+
+
+// REPLACE   window.location.replace:
+// Este método substitui a página atual na história do navegador pela nova página. O usuário NAO PODE VOLTAR à página anterior usando o botão “voltar”.
+
