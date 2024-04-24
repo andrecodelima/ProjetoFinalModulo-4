@@ -23,8 +23,14 @@
     </script>
 
   <style>
+      .main-galeria{
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: center;
+
+  }
     .main-galeria section {
-      height: 150vh;
+      /* border: 4px solid blue; */
     }
 
     .main-galeria section article {
@@ -55,9 +61,12 @@
     }
 
     .main-galeria article img {
-      width: 100%;
-      height: 22vh;
+      border: 4px solid #fff;
+      border-radius: 50%;
+      width: 15vw;
+      height: 20vh;
     }
+    
   </style>
 </head>
 
@@ -80,7 +89,7 @@
         <div class="collapse navbar-collapse justify-content-md-end" id="navbarsExample08">
           <ul class="navbar-nav" id="navbar-menu">
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="../projetos/projetos.html">projetos</a>
+              <a class="nav-link" aria-current="page" href="../projetos/projetos.html">portfólio</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="../sobre/sobre.html">sobre</a>
@@ -114,75 +123,77 @@
   </header>
 
   <main class="main-galeria mt-5">
-    <section class="box-sideBar">
-        <div>
-          <h2>FOTÓGRAFOS</h2>
-        </div>
-    </section>
-
     <section>
-      <article>
-        <div>
-          <h3>MASSIMO.JULIO</h3>
-          <hr class="mt-2">
-          <p>
-            Há 20 anos como fotágrafo, seu foco são fotos de casamento
+      <div class="px-4 my-5 text-center">
+        <h1 class="display-5 fw-bold text-body-emphasis mb-4" style="text-decoration: underline;">PROFISSIONAIS</h1>
+        <div class="col-lg-10 mx-auto">
+          <h4>Conheça nossa equipe de talentosos fotógrafos profissionais.</h4>
+          <p class="lead mb-4">Somos apaixonados por capturar momentos que contam histórias únicas e eternizam emoções. Combinando técnica e    criatividade, transformamos o ordinário em extraordinário através de nossas lentes.
+
+            Com habilidades variadas e experiência diversificada, cada membro da nossa equipe está comprometido em capturar momentos únicos e transformá-los em imagens memoráveis. Do retrato à paisagem, do casamento à fotografia comercial, nossos profissionais estão prontos para atender às suas necessidades fotográficas com expertise e paixão.
           </p>
         </div>
-        <a class="nav-link" href="#"><img
-            src="https://static.scientificamerican.com/sciam/cache/file/D08345E8-567E-422A-A8DEE8EF110CF030_source.jpg?w=900"
+        <hr style="border: 8px dashed #fff;">
+      </div>
+
+      <article>
+        <div>
+          <h3>LIMA.ANDRÉ</h3>
+          <hr class="mt-2">
+          <p>
+            Há 20 anos como fotágrafo, seu foco são fotografias da <span style="font-weight: bolder; text-transform: uppercase;">natureza e astro-fotos.</span>
+          </p>
+        </div>
+        <a class="nav-link" href="#">
+          <img
+          src="../../img/profissionais/fotografo_01.jpg"
+
             alt="Pinterest" title="Link para Pinterest" role="img" aria-label="Imagem de Link para Pinterest" />
         </a>
       </article>
 
       <article>
         <div>
-          <h3>MASSIMO.JULIO</h3>
+          <h3>BARCELLOS.EDUARDO</h3>
           <hr class="mt-2">
           <p>
-            Há 20 anos como fotágrafo, seu foco são fotos de casamento
+            Há 20 anos como fotágrafo, seu foco são fotografias da <span style="font-weight: bolder;text-transform: uppercase;">casamento.</span>
           </p>
         </div>
         <a class="nav-link" href="#"><img
-            src="https://static.scientificamerican.com/sciam/cache/file/D08345E8-567E-422A-A8DEE8EF110CF030_source.jpg?w=900"
+            src="../../img/profissionais/fotografo_03.jpg"
             alt="Pinterest" title="Link para Pinterest" role="img" aria-label="Imagem de Link para Pinterest" />
         </a>
       </article>
 
       <article>
         <div>
-          <h3>MASSIMO.JULIO</h3>
+          <h3>BACKER.JULIA</h3>
           <hr class="mt-2">
           <p>
-            Há 20 anos como fotágrafo, seu foco são fotos de casamento
+            Há 20 anos como fotágrafo, seu foco são fotos de <span style="font-weight: bolder;text-transform: uppercase;">festas e formaturas.</span>
           </p>
         </div>
         <a class="nav-link" href="#"><img
-            src="https://static.scientificamerican.com/sciam/cache/file/D08345E8-567E-422A-A8DEE8EF110CF030_source.jpg?w=900"
-            alt="Pinterest" title="Link para Pinterest" role="img" aria-label="Imagem de Link para Pinterest" />
+          src="../../img/profissionais/fotografo_04.jpg"
+          alt="Pinterest" title="Link para Pinterest" role="img" aria-label="Imagem de Link para Pinterest" />
         </a>
       </article>
 
       <article>
         <div>
-          <h3>MASSIMO.JULIO</h3>
+          <h3>SILVA.ELIO</h3>
           <hr class="mt-2">
           <p>
-            Há 20 anos como fotágrafo, seu foco são fotos de casamento
+            Há 20 anos como fotágrafo, seu foco são fotos de <span style="font-weight: bolder;text-transform: uppercase;">casamento.</span>
           </p>
         </div>
         <a class="nav-link" href="#"><img
-            src="https://static.scientificamerican.com/sciam/cache/file/D08345E8-567E-422A-A8DEE8EF110CF030_source.jpg?w=900"
+          src="../../img/profissionais/fotografo_02.jpg"
             alt="Pinterest" title="Link para Pinterest" role="img" aria-label="Imagem de Link para Pinterest" />
         </a>
       </article>
-
-
-
     </section>
-
-
-    <!-- Section 1 - End -->
 
   </main>
 

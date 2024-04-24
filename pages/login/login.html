@@ -69,6 +69,13 @@
       height: 5vh;
       margin-top: 15%;
     }
+
+    .dica{
+      display: none;
+      color: #666;
+      background-color: rgba(255, 235, 58, 0.295);
+      padding:5px;
+    }
   </style>
 </head>
 
@@ -90,7 +97,7 @@
         <div class="collapse navbar-collapse justify-content-md-end" id="navbarsExample08">
           <ul class="navbar-nav" id="navbar-menu">
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="../projetos/projetos.html">projetos</a>
+              <a class="nav-link" aria-current="page" href="../projetos/projetos.html">portfólio</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="../sobre/sobre.html">sobre</a>
@@ -99,7 +106,7 @@
               <a class="nav-link" href="../profissionais/profissionais.html">profissionais</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="../trabalhe conosco/trabalhe_conosco.html">trbalhe conosco</a>
+              <a class="nav-link active" href="../trabalhe conosco/trabalhe_conosco.html">trabalhe conosco</a>
             </li>
           </ul>
 
@@ -134,26 +141,26 @@
       <div style="width: 90%; display: flex; justify-content: center;">
         <form class="row" action="" id="form-login">
 
-          <div class="col-md-6">
-            <label for="">Usuário</label>
-            <input type="text" class="form-control" id="usuario" placeholder="" title="informe o nome">
-            <span id="usuarioErro" style="color: red"></span>
-          </div>
+            <div class="col-md-6">
+              <label for="">Usuário</label>
+              <div id="dica-usuario" class="dica">Insira o número</div>
+              <input type="text" class="form-control" id="usuario" placeholder="" title="informe o nome">
+              <span id="usuarioErro" style="color: red"></span>
+            </div>
 
-          <div class="col-md-4" style="margin-left: 3%">
-            <label for="">Senha</label>
-            <input type="password" class="form-control" id="senha" placeholder="" maxlength="11" title="Informe sua senha">
-            <span id="senhaErro" style="color: red"></span>
-          </div>
-
-          <div class="row"></div>
-
-          <div class="col-md-3">
-            <button class="btn btn-dark rounded-0" type="button" onclick="login()">Enviar</button>
-          </div>
-          <div class="col-md-3" style="margin-left: 2%;">
-            <button class="btn btn-secondary rounded-0" type="button" onclick="limpar()">Limpar</button>
-          </div>
+            <div class="col-md-4" style="margin-left: 3%">
+              <label for="">Senha</label>
+              <div id="dica-senha" class="dica">Insira o número</div>
+              <input type="password" class="form-control" id="senha" placeholder="" maxlength="11" title="Informe sua senha">
+              <span id="senhaErro" style="color: red"></span>
+            </div>
+            
+            <div class="col-md-3">
+              <button class="btn btn-dark rounded-0" type="button" onclick="login()">Enviar</button>
+            </div>
+            <div class="col-md-3" style="margin-left: 2%;">
+              <button class="btn btn-secondary rounded-0" type="button" onclick="limpar()">Limpar</button>
+            </div>
         </form>
       </div>
     </section>
