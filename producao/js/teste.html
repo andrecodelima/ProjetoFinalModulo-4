@@ -1,0 +1,41 @@
+<html>
+<img src="../pages/trabalhe conosco/trabalhe_conosco.html" alt="">
+
+<button onclick="pagina()">TESTE</button>
+
+<script>
+    // SET TIME OU E REDIRECIONAMENTO DE PAGINA
+
+    // HREF - window.location.href:
+    // Este método redireciona o usuário para a nova página e PERMITE que ele clique no botão “voltar” do navegador para retornar à página anterior.
+
+    function pagina() {
+
+        alert('Voce será redirecionado em 3 segundos.');
+
+        setTimeout(function () {
+            window.location.href = "../index.html";
+        }, 3000);
+    }
+
+    setTimeout(function () {
+        console.log("Código sendo executado após 3 segundos!");
+    }, 3000);
+
+    // REPLACE   window.location.replace:
+    // Este método substitui a página atual na história do navegador pela nova página. O usuário NAO PODE VOLTAR à página anterior usando o botão “voltar”.
+
+    // function pagina() {
+
+    //     alert('Voce será redirecionado em 3 segundos.');
+
+    //     setTimeout(function () {
+    //         window.location.replace = "../index.html";
+    //     }, 3000);
+    // }
+
+
+
+</script>
+
+</html>

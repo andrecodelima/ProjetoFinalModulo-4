@@ -1,0 +1,528 @@
+@media (min-width: 320px) and (max-width: 480px) and (orientation:portrait) {
+  header .pre-nav {
+    display: none;
+  }
+
+  .navbar-nav {
+    border: 2px solid red;
+    display: inline-block;
+
+  }
+
+  nav .nav-link {
+    /* border: 2px solid red; */
+    margin-top: 2%;
+    text-transform: capitalize;
+    padding-left: 20px;
+    text-align: left;
+  }
+
+  .nav-bar .nav-item {
+    border: 2px solid red;
+
+  }
+
+  ul .nav-item {
+    /* border: 2px solid red; */
+    font-size: 1.3rem;
+    display: inline;
+  }
+
+  .home {
+    display: block;
+  }
+
+  nav .nav-link img {
+    border: 2px solid red;
+    width: 12%;
+  }
+
+  .box-logo img {
+    display: none;
+  }
+
+  .form-control {
+    display: none;
+  }
+
+  .main-projeto section {
+    border: 2px solid red;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border: 2px solid #ffffff00;
+
+  }
+
+  section.projeto {
+    border: 2px solid red;
+    width: 100%;
+    height: 50vh;
+    display: inline-block;
+    background-image: url('../../img/fundo_06.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #ffffff;
+  }
+
+  
+.main-projeto section .navbar-nav{
+  border: 2px solid blue;
+  display: inline-block;
+  flex-direction: row;
+}
+
+.main-projeto section .navbar-nav .nav-link{
+  border: 2px solid red;
+  padding: 20px;
+}
+
+
+  section.projeto h1 {
+    border: none;
+    font-size: 2.7rem;
+  }
+
+  hr {
+    display: none;
+  }
+
+  .main-projeto section img {
+    border: 30px solid #2c2c2c;
+    width: 80vw;
+    height: 45vh;
+    /* border-radius: 2%; */
+  }
+
+}
+
+@media (min-width: 320px) and (max-width: 480px) and (orientation:landscape) {
+  header .pre-nav {
+    display: none;
+  }
+
+  .navbar-nav {
+    border: 2px solid red;
+    display: inline-block;
+
+  }
+
+  nav .nav-link {
+    /* border: 2px solid red; */
+    margin-top: 2%;
+    text-transform: capitalize;
+    padding-left: 20px;
+    text-align: left;
+  }
+
+  ul .nav-item {
+    /* border: 2px solid red; */
+    font-size: 1.3rem;
+  }
+
+  .home {
+    display: block;
+  }
+
+  nav .nav-link img {
+    border: 2px solid red;
+    width: 12%;
+  }
+
+  .box-logo img {
+    display: none;
+  }
+
+  .form-control {
+    display: none;
+  }
+
+  .main-projeto section {
+    width: 100%;
+    display: inline-block;
+    justify-content: center;
+    border: 2px solid #ffffff00;
+
+  }
+
+  section.projeto {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    background-image: url('../../img/fundo_06.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #ffffff;
+  }
+
+  section.projeto h1 {
+    border: none;
+  }
+
+  hr {
+    display: none;
+  }
+
+
+}
+
+@media (min-width: 481px) and (max-width: 768px) and (orientation:portrait) {
+  header .pre-nav {
+    display: none;
+  }
+
+  .navbar-nav {
+    border: 2px solid red;
+    display: inline-block;
+
+  }
+
+  nav .nav-link {
+    /* border: 2px solid red; */
+    margin-top: 2%;
+    text-transform: capitalize;
+    padding-left: 20px;
+    text-align: left;
+  }
+
+  ul .nav-item {
+    border: 2px solid red;
+    font-size: 1.3rem;
+
+  }
+
+  .home {
+    display: block;
+  }
+
+  nav .nav-link img {
+    border: 2px solid red;
+    width: 7%;
+  }
+
+  .box-logo img {
+    display: none;
+  }
+
+  .form-control {
+    display: none;
+  }
+
+  .main-projeto section {
+    width: 100%;
+    display: inline-block;
+    justify-content: center;
+    border: 2px solid #ffffff00;
+
+  }
+
+  section.projeto {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    background-image: url('../../img/fundo_06.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #ffffff;
+  }
+
+  section.projeto h1 {
+    border: none;
+  }
+  .main-projeto section .navbar-nav {
+    border: 2px solid blue;
+    display: flex;
+    justify-content: center;
+  }
+  hr {
+    display: none;
+  }
+
+  .main-projeto section img {
+    border: 30px solid #2c2c2c;
+    width: 100%;
+    height: 45vh;
+    /* border-radius: 2%; */
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) and (orientation:landscape) {
+  header .pre-nav {
+    display: none;
+  }
+
+  .navbar-nav {
+    border: 2px solid red;
+    display: inline-block;
+
+  }
+
+  nav .nav-link {
+    /* border: 2px solid red; */
+    margin-top: 2%;
+    text-transform: capitalize;
+    padding-left: 20px;
+    text-align: left;
+  }
+
+  ul .nav-item {
+    border: 2px solid red;
+    font-size: 1.3rem;
+
+  }
+
+  .home {
+    display: block;
+  }
+
+  nav .nav-link img {
+    border: 2px solid red;
+    width: 7%;
+  }
+
+  .box-logo img {
+    display: none;
+  }
+
+  .form-control {
+    display: none;
+  }
+
+  .main-projeto section {
+    width: 100%;
+    display: inline-block;
+    justify-content: center;
+    border: 2px solid #ffffff00;
+
+  }
+
+  section.projeto {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    background-image: url('../../img/fundo_06.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #ffffff;
+  }
+  .main-projeto section .navbar-nav {
+    border: 2px solid blue;
+    display: flex;
+    justify-content: center;
+  }
+  section.projeto h1 {
+    border: none;
+  }
+
+  hr {
+    display: none;
+  }
+
+  .main-projeto section img {
+    border: 30px solid #2c2c2c;
+    width: 100%;
+    height: 65vh;
+    /* border-radius: 2%; */
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1190px) and (orientation:portrait) {
+  header .pre-nav {
+    display: none;
+  }
+
+  nav .nav-link {
+    /* border: 2px solid red; */
+    margin-top: 2%;
+    text-transform: capitalize;
+    padding-left: 20px;
+    text-align: left;
+  }
+
+  ul .nav-item {
+    border: 2px solid red;
+    font-size: 1.3rem;
+
+  }
+
+  .home {
+    display: block;
+  }
+
+  nav .nav-link img {
+    border: 2px solid red;
+    width: 7%;
+  }
+
+  .box-logo img {
+    display: none;
+  }
+
+  section.projeto {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    background-image: url('../../img/fundo_06.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #ffffff;
+  }
+  .main-projeto section .navbar-nav {
+    border: 2px solid blue;
+    display: flex;
+    justify-content: center;
+  }
+  section.projeto h1 {
+    border: none;
+  }
+
+  hr {
+    display: none;
+  }
+
+  .main-projeto section img {
+    border: 30px solid #2c2c2c;
+    width: 80%;
+    height: 45vh;
+    /* border-radius: 2%; */
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1190px) and (orientation:landscape) {
+  header .pre-nav {
+    display: none;
+  }
+
+  nav .nav-link {
+    /* border: 2px solid red; */
+    margin-top: 2%;
+    text-transform: capitalize;
+    padding-left: 20px;
+    text-align: left;
+  }
+
+  ul .nav-item {
+    border: 2px solid red;
+    font-size: 1.3rem;
+
+  }
+
+  .home {
+    display: block;
+  }
+
+  nav .nav-link img {
+    border: 2px solid red;
+    width: 7%;
+  }
+
+  .box-logo img {
+    display: none;
+  }
+
+
+  .box-logo img {
+    display: none;
+  }
+
+  .form-control {
+    display: none;
+  }
+
+  .main-projeto section {
+    width: 100%;
+    display: inline-block;
+    justify-content: center;
+    border: 2px solid #ffffff00;
+
+  }
+
+  section.projeto {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    background-image: url('../../img/fundo_06.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #ffffff;
+  }
+
+  .main-projeto section .navbar-nav {
+    border: 2px solid blue;
+    display: flex;
+    justify-content: center;
+  }
+
+  section.projeto h1 {
+    border: none;
+  }
+
+  hr {
+    display: none;
+  }
+
+  .main-projeto section img {
+    border: 30px solid #2c2c2c;
+    width: 100%;
+    height: 65vh;
+    /* border-radius: 2%; */
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1190px) and (orientation:portrait) {
+  header .pre-nav {
+    display: none;
+  }
+
+  nav .nav-link {
+    /* border: 2px solid red; */
+    margin-top: 2%;
+    text-transform: capitalize;
+    padding-left: 20px;
+    text-align: left;
+  }
+
+  ul .nav-item {
+    border: 2px solid red;
+    font-size: 1.3rem;
+
+  }
+
+  .home {
+    display: block;
+  }
+
+  nav .nav-link img {
+    border: 2px solid red;
+    width: 7%;
+  }
+
+  .box-logo img {
+    display: none;
+  }
+
+  section.projeto {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    background-image: url('../../img/fundo_06.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #ffffff;
+  }
+
+  section.projeto h1 {
+    border: none;
+  }
+
+  hr {
+    display: none;
+  }
+
+  .main-projeto section img {
+    border: 30px solid #2c2c2c;
+    width: 80%;
+    height: 65vh;
+    /* border-radius: 2%; */
+  }
+}
