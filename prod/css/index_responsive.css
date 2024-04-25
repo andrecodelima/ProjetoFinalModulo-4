@@ -12,7 +12,6 @@
   }
 
     ul .nav-item{
-      border: 2px solid red;
       font-size: 1.3rem;
     }
 
@@ -20,7 +19,6 @@
       display: block;
     }
     nav .nav-link img{
-      border: 2px solid red;
       width: 12%;
     }
     
@@ -29,12 +27,10 @@
     }
     
     .container{
-      border:2px solid red;
       width: 115%;
     }
 
     section{
-      border:2px solid red;
       width: 100%;
       margin-bottom: 5%;
       display: flex;
@@ -56,12 +52,10 @@
   }
 
     ul .nav-item{
-      border: 2px solid red;
       font-size: 1.3rem;
 
     }
     nav .nav-link img{
-      border: 2px solid red;
       width: 8%;
     }
     
@@ -70,12 +64,10 @@
     }
     
     .container{
-      /* border:2px solid red; */
       width: 100%;
     }
 
     section{
-      /* border:2px solid red; */
       width: 100%;
       margin-bottom: 5%;
     }
@@ -87,7 +79,6 @@
     }
 
     nav .nav-link {
-    /* border: 2px solid red; */
     margin-top: 2%;
     text-transform: capitalize;
     padding-left: 20px;
@@ -95,12 +86,10 @@
   }
 
     ul .nav-item{
-      border: 2px solid red;
       font-size: 1.3rem;
 
     }
     nav .nav-link img{
-      border: 2px solid red;
       width: 7%;
     }
     
@@ -108,12 +97,10 @@
       display: none;
     }
     .container{
-      /* border:2px solid red; */
       width: 100%;
     }
 
     section{
-      /* border:2px solid red; */
       width: 90%;
       margin-bottom: 5%;
     }
@@ -135,12 +122,10 @@ header .pre-nav {
   }
 
     ul .nav-item{
-      border: 2px solid red;
       font-size: 1.3rem;
 
     }
     nav .nav-link img{
-      border: 2px solid red;
       width: 7%;
     }
     
@@ -148,12 +133,10 @@ header .pre-nav {
       display: none;
     }
     .container{
-      border:2px solid red;
       width: 100%;
     }
 
     section{
-      border:2px solid red;
       width: 100%;
       margin-bottom: 5%;
     }
@@ -172,18 +155,12 @@ header .pre-nav {
     text-align: left;
   }
 
-    ul .nav-item{
-      border: 2px solid red;
-
-    }
 
     ul .nav-item{
-        border: 2px solid red;
         font-size: 1.6rem;
       }
 
     nav .nav-link img{
-      border: 2px solid red;
       width: 5%;
     }
     
@@ -197,7 +174,6 @@ header .pre-nav {
     }
 
     nav .nav-link {
-    /* border: 2px solid red; */
     margin-top: 2%;
     text-transform: capitalize;
     padding-left: 20px;
@@ -205,16 +181,9 @@ header .pre-nav {
   }
 
     ul .nav-item{
-      border: 2px solid red;
-
-    }
-
-    ul .nav-item{
-        /* border: 2px solid red; */
         font-size: 1.6rem;
       }
     nav .nav-link img{
-      border: 2px solid red;
       width: 5%;
     }
     

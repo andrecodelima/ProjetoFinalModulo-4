@@ -4,7 +4,6 @@
       }
 
       nav .nav-link {
-      /* border: 2px solid red; */
       margin-top: 2%;
       text-transform: capitalize;
       padding-left: 20px;
@@ -12,7 +11,6 @@
     }
 
       ul .nav-item{
-        border: 2px solid red;
         font-size: 1.3rem;
       }
 
@@ -21,7 +19,6 @@
       }
 
       nav .nav-link img{
-        border: 2px solid red;
         width: 12%;
       }
       
@@ -30,7 +27,6 @@
       }
       
   .main-galeria{
-  border: 2px solid red;
   display: flex;
   justify-content: center;
 
@@ -48,12 +44,10 @@
 
 .row input,
 .row select {
-  border: 4px solid red;
   margin-bottom: 8%;
 }
 
 .col-md-3 button{
-border: 2px solid red;
 display: block;
 width: 100%;
 margin-bottom: 3%;
@@ -67,7 +61,6 @@ margin-bottom: 3%;
       }
 
       nav .nav-link {
-      /* border: 2px solid red; */
       margin-top: 2%;
       text-transform: capitalize;
       padding-left: 20px;
@@ -75,7 +68,6 @@ margin-bottom: 3%;
     }
 
       ul .nav-item{
-        border: 2px solid red;
         font-size: 1.3rem;
       }
 
@@ -84,7 +76,6 @@ margin-bottom: 3%;
       }
 
       nav .nav-link img{
-        border: 2px solid red;
         width: 12%;
       }
       
@@ -93,7 +84,6 @@ margin-bottom: 3%;
       }
       
   .main-galeria{
-  border: 2px solid red;
   display: flex;
   justify-content: center;
 
@@ -111,12 +101,10 @@ margin-bottom: 3%;
 
 .row input,
 .row select {
-  border: 4px solid red;
   margin-bottom: 8%;
 }
 
 .col-md-3 button{
-border: 2px solid red;
 display: block;
 width: 100%;
 margin-bottom: 3%;
@@ -130,7 +118,6 @@ margin-bottom: 3%;
       }
 
       nav .nav-link {
-      /* border: 2px solid red; */
       margin-top: 2%;
       text-transform: capitalize;
       padding-left: 20px;
@@ -138,7 +125,6 @@ margin-bottom: 3%;
     }
 
       ul .nav-item{
-        border: 2px solid red;
         font-size: 1.3rem;
 
       }
@@ -148,7 +134,6 @@ margin-bottom: 3%;
       }
 
       nav .nav-link img{
-        border: 2px solid red;
         width: 7%;
       }
       
@@ -157,7 +142,6 @@ margin-bottom: 3%;
       }
 
   .main-galeria{
-  border: 2px solid red;
   display: flex;
   justify-content: center;
 
@@ -175,14 +159,12 @@ margin-bottom: 3%;
 
 .row input,
 .row select {
-  border: 4px solid red;
   margin-bottom: 8%;
 }
 
 
 
 .col-md-3 button{
-border: 2px solid red;
 display: block;
 width: 100%;
 height: 10vh;
@@ -197,7 +179,6 @@ margin-bottom: 3%;
       }
 
       nav .nav-link {
-      /* border: 2px solid red; */
       margin-top: 2%;
       text-transform: capitalize;
       padding-left: 20px;
@@ -205,7 +186,6 @@ margin-bottom: 3%;
     }
 
       ul .nav-item{
-        border: 2px solid red;
         font-size: 1.3rem;
 
       }
@@ -215,7 +195,6 @@ margin-bottom: 3%;
       }
 
       nav .nav-link img{
-        border: 2px solid red;
         width: 7%;
       }
       
@@ -224,7 +203,6 @@ margin-bottom: 3%;
       }
 
   .main-galeria{
-  border: 2px solid red;
   display: flex;
   justify-content: center;
 
@@ -242,12 +220,10 @@ margin-bottom: 3%;
 
 .row input,
 .row select {
-  border: 4px solid red;
   margin-bottom: 8%;
 }
 
 .col-md-3 button{
-border: 2px solid red;
 display: block;
 width: 100%;
 height: 10vh;
@@ -261,7 +237,6 @@ margin-bottom: 3%;
       }
 
       nav .nav-link {
-      /* border: 2px solid red; */
       margin-top: 2%;
       text-transform: capitalize;
       padding-left: 20px;
@@ -269,7 +244,6 @@ margin-bottom: 3%;
     }
 
       ul .nav-item{
-        border: 2px solid red;
         font-size: 1.3rem;
 
       }
@@ -279,7 +253,6 @@ margin-bottom: 3%;
       }
 
       nav .nav-link img{
-        border: 2px solid red;
         width: 7%;
       }
       
@@ -287,19 +260,16 @@ margin-bottom: 3%;
         display: none;
       }
 .main-galeria{
-  border: 2px solid red;
   display: flex;
   justify-content: center;
 
 }
 
 .main-galeria .box-form{
-  border: 4px solid blue;
   padding: 3%;
 
 }
 form{
-  border: 2px solid red;
   width: 100vw;
 }
 
@@ -315,13 +285,7 @@ form{
 
 .row input,
 .row select {
-  border: 4px solid red;
   margin-bottom: 8%;
-}
-
-.col-md-1 input{
-  border: 2px solid blue;
-
 }
 
 .col-md-2,.col-md-3{
@@ -332,12 +296,10 @@ form{
   width: 90%
 }
 .col-md-3 input, .col-md-2 select{
-  border: 2px solid blue;
   width: 25vw;
 }
 
 .col-md-3 button{
-border: 2px solid red;
 display: block;
 width: 100%;
 height: 5vh;
@@ -350,7 +312,6 @@ margin-bottom: 3%;
       }
 
       nav .nav-link {
-      /* border: 2px solid red; */
       margin-top: 2%;
       text-transform: capitalize;
       padding-left: 20px;
@@ -358,7 +319,6 @@ margin-bottom: 3%;
     }
 
       ul .nav-item{
-        border: 2px solid red;
         font-size: 1.3rem;
 
       }
@@ -368,7 +328,6 @@ margin-bottom: 3%;
       }
 
       nav .nav-link img{
-        border: 2px solid red;
         width: 7%;
       }
       
@@ -376,19 +335,16 @@ margin-bottom: 3%;
         display: none;
       }
   .main-galeria{
-  border: 2px solid red;
   display: flex;
   justify-content: center;
 
 }
 
 .main-galeria .box-form{
-  border: 4px solid blue;
   padding: 3%;
 
 }
 form{
-  border: 2px solid red;
   width: 100vw;
 }
 
@@ -404,13 +360,7 @@ form{
 
 .row input,
 .row select {
-  border: 4px solid red;
   margin-bottom: 8%;
-}
-
-.col-md-1 input{
-  border: 2px solid blue;
-
 }
 
 .col-md-2,.col-md-3{
@@ -421,12 +371,10 @@ form{
   width: 90%
 }
 .col-md-3 input, .col-md-2 select{
-  border: 2px solid blue;
   width: 25vw;
 }
 
 .col-md-3 button{
-border: 2px solid red;
 display: block;
 width: 100%;
 height: 10vh;

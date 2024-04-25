@@ -4,26 +4,19 @@
   }
 
   .navbar-nav {
-    border: 2px solid red;
     display: inline-block;
 
   }
 
   nav .nav-link {
-    /* border: 2px solid red; */
     margin-top: 2%;
     text-transform: capitalize;
     padding-left: 20px;
     text-align: left;
   }
 
-  .nav-bar .nav-item {
-    border: 2px solid red;
-
-  }
 
   ul .nav-item {
-    /* border: 2px solid red; */
     font-size: 1.3rem;
     display: inline;
   }
@@ -33,7 +26,6 @@
   }
 
   nav .nav-link img {
-    border: 2px solid red;
     width: 12%;
   }
 
@@ -46,7 +38,6 @@
   }
 
   .main-projeto section {
-    border: 2px solid red;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -55,7 +46,6 @@
   }
 
   section.projeto {
-    border: 2px solid red;
     width: 100%;
     height: 50vh;
     display: inline-block;
@@ -67,7 +57,6 @@
 
   
 .main-projeto section .navbar-nav{
-  border: 2px solid blue;
   display: inline-block;
   flex-direction: row;
 }
@@ -102,13 +91,11 @@
   }
 
   .navbar-nav {
-    border: 2px solid red;
     display: inline-block;
 
   }
 
   nav .nav-link {
-    /* border: 2px solid red; */
     margin-top: 2%;
     text-transform: capitalize;
     padding-left: 20px;
@@ -116,7 +103,6 @@
   }
 
   ul .nav-item {
-    /* border: 2px solid red; */
     font-size: 1.3rem;
   }
 
@@ -125,7 +111,6 @@
   }
 
   nav .nav-link img {
-    border: 2px solid red;
     width: 12%;
   }
 
@@ -172,13 +157,11 @@
   }
 
   .navbar-nav {
-    border: 2px solid red;
     display: inline-block;
 
   }
 
   nav .nav-link {
-    /* border: 2px solid red; */
     margin-top: 2%;
     text-transform: capitalize;
     padding-left: 20px;
@@ -186,7 +169,6 @@
   }
 
   ul .nav-item {
-    border: 2px solid red;
     font-size: 1.3rem;
 
   }
@@ -196,7 +178,6 @@
   }
 
   nav .nav-link img {
-    border: 2px solid red;
     width: 7%;
   }
 
@@ -230,8 +211,7 @@
     border: none;
   }
   .main-projeto section .navbar-nav {
-    border: 2px solid blue;
-    display: flex;
+      display: flex;
     justify-content: center;
   }
   hr {
@@ -252,13 +232,11 @@
   }
 
   .navbar-nav {
-    border: 2px solid red;
     display: inline-block;
 
   }
 
   nav .nav-link {
-    /* border: 2px solid red; */
     margin-top: 2%;
     text-transform: capitalize;
     padding-left: 20px;
@@ -266,7 +244,6 @@
   }
 
   ul .nav-item {
-    border: 2px solid red;
     font-size: 1.3rem;
 
   }
@@ -276,7 +253,6 @@
   }
 
   nav .nav-link img {
-    border: 2px solid red;
     width: 7%;
   }
 
@@ -306,8 +282,7 @@
     color: #ffffff;
   }
   .main-projeto section .navbar-nav {
-    border: 2px solid blue;
-    display: flex;
+      display: flex;
     justify-content: center;
   }
   section.projeto h1 {
@@ -332,7 +307,6 @@
   }
 
   nav .nav-link {
-    /* border: 2px solid red; */
     margin-top: 2%;
     text-transform: capitalize;
     padding-left: 20px;
@@ -340,7 +314,6 @@
   }
 
   ul .nav-item {
-    border: 2px solid red;
     font-size: 1.3rem;
 
   }
@@ -350,7 +323,6 @@
   }
 
   nav .nav-link img {
-    border: 2px solid red;
     width: 7%;
   }
 
@@ -368,8 +340,7 @@
     color: #ffffff;
   }
   .main-projeto section .navbar-nav {
-    border: 2px solid blue;
-    display: flex;
+      display: flex;
     justify-content: center;
   }
   section.projeto h1 {
@@ -384,7 +355,6 @@
     border: 30px solid #2c2c2c;
     width: 80%;
     height: 45vh;
-    /* border-radius: 2%; */
   }
 }
 
@@ -394,7 +364,6 @@
   }
 
   nav .nav-link {
-    /* border: 2px solid red; */
     margin-top: 2%;
     text-transform: capitalize;
     padding-left: 20px;
@@ -402,7 +371,6 @@
   }
 
   ul .nav-item {
-    border: 2px solid red;
     font-size: 1.3rem;
 
   }
@@ -412,7 +380,6 @@
   }
 
   nav .nav-link img {
-    border: 2px solid red;
     width: 7%;
   }
 
@@ -448,8 +415,7 @@
   }
 
   .main-projeto section .navbar-nav {
-    border: 2px solid blue;
-    display: flex;
+      display: flex;
     justify-content: center;
   }
 
@@ -475,7 +441,6 @@
   }
 
   nav .nav-link {
-    /* border: 2px solid red; */
     margin-top: 2%;
     text-transform: capitalize;
     padding-left: 20px;
@@ -483,7 +448,6 @@
   }
 
   ul .nav-item {
-    border: 2px solid red;
     font-size: 1.3rem;
 
   }
@@ -493,7 +457,6 @@
   }
 
   nav .nav-link img {
-    border: 2px solid red;
     width: 7%;
   }
 

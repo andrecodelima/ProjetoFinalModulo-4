@@ -1,4 +1,5 @@
 // CEP
+// Função para preechimento automático do CEP
 $(document).ready(function () {
     $('#cep').blur(function () {
         var cep = $('#cep').val();

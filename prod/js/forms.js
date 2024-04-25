@@ -11,12 +11,10 @@ function validarNome() {
     $("#nomeErro").html("Erro | Campo vazio").show();
     $("#nome").css("border", "solid 3px red");
     return false;
-
   } else if (!caracteres.test(nome)) {
     $("#nomeErro").html("Erro | Use apenas letras e espaços").show();
     $("#nome").css("border", "solid 3px red");
     return false;
-
   } else {
     $("#nomeErro").hide();
     $("#nome").css("border", "solid 3px green");
@@ -52,18 +50,15 @@ function validarDataNascimento() {
     $("#dataErro").html("Erro | Campo vazio").show();
     $("#data").css("border", "solid 3px red");
     return false;
-    
   } else if (data.length < 8) {
     $("#dataErro")
       .html("Erro |  Quantidade de caracteres insuficientes")
       .show();
     $("#data").css("border", "solid 3px red");
     return false;
-
   } else if (parseInt(data.substr(6)) < 1910) {
     $("#dataErro").html("Erro | Data inválida").show();
     $("#data").css("border", "solid 3px red");
-
   } else {
     $("#dataErro").hide();
     $("#data").css("border", "solid 3px green");
@@ -109,13 +104,11 @@ function validarEmail() {
   if (email == "") {
     $("#emailErro").html("Erro | Campo vazio").show();
     $("#email").css("border", "solid 3px red");
-    
   } else if (!caracteres.test(email[0])) {
     $("#emailErro").html("Erro | Campo inválido").show();
     $("#email").css("border", "solid 3px red");
     return false;
-
-  }else {
+  } else {
     $("#emailErro").hide();
     $("#email").css("border", "solid 3px green");
     $("#dica-email").hide();
@@ -130,12 +123,10 @@ function validarCelular() {
     $("#celErro").html("Erro | Campo vazio").show();
     $("#celular").css("border", "solid 3px red");
     $("#celSucesso").html("").hide();
-
   } else if (celular.length < 11) {
     $("#celErro").html("Erro | Campo vazio").show();
     $("#celular").css("border", "solid 3px red");
     $("#celSucesso").html("").hide();
-
   } else {
     $("#celErro").hide();
     $("#celular").css("border", "solid 3px green");
@@ -156,52 +147,45 @@ function validarCep() {
 
 // Número
 function validarNumero() {
-    var numero = $("#numero").val().trim();
-  
-    if (numero == "") {
-      $("#numeroErro").html("Erro | Campo vazio").show();
-      $("#numero").css("border", "solid 3px red");
-      $("#numeroSucesso").html("").hide();
-      return false;
+  var numero = $("#numero").val().trim();
 
-    }else if (numero.length == 0) {
-
-      $("#numeroErro").html("Erro | Campo vazio").show();
-      $("#numero").css("border", "solid 3px red");
-      $("#numeroSucesso").html("").hide();
-      return false;
-
-    } else {
-      $("#numeroErro").hide();
-      $("#numero").css("border", "solid 3px green");
-      $("#dica-numero").hide();
-      return true;
-    }
+  if (numero == "") {
+    $("#numeroErro").html("Erro | Campo vazio").show();
+    $("#numero").css("border", "solid 3px red");
+    $("#numeroSucesso").html("").hide();
+    return false;
+  } else if (numero.length == 0) {
+    $("#numeroErro").html("Erro | Campo vazio").show();
+    $("#numero").css("border", "solid 3px red");
+    $("#numeroSucesso").html("").hide();
+    return false;
+  } else {
+    $("#numeroErro").hide();
+    $("#numero").css("border", "solid 3px green");
+    $("#dica-numero").hide();
+    return true;
   }
+}
 
 // Experiência
 function validarExperiencia() {
-var experiencia = $("#experiencia").val().trim();
+  var experiencia = $("#experiencia").val().trim();
 
-if (experiencia == "") {
+  if (experiencia == "") {
     $("#expErro").html("Erro | Campo vazio").show();
     $("#experiencia").css("border", "solid 3px red");
     return false;
-
-}else if(experiencia == 0 ){
+  } else if (experiencia == 0) {
     $("#expErro").html("Erro | Tempo de experiência insuficiente").show();
     $("#experiencia").css("border", "solid 3px red");
     return false;
-
-}else {
+  } else {
     $("#expErro").hide();
     $("#experiencia").css("border", "solid 3px green");
     $("#dica-experiencia").hide();
     return true;
+  }
 }
-}
-
- 
 
 // Ativação
 $(document).ready(function () {
@@ -254,29 +238,26 @@ $(document).ready(function () {
 
   $("#celular").blur(validarCelular);
 
- 
-// Cep
-$("#cep").focus(function () {
+  // Cep
+  $("#cep").focus(function () {
     $("#dica-cep").fadeIn();
   });
 
   $("#cep").blur(validarCep);
 
-// Número
-$("#numero").focus(function () {
-$("#dica-numero").fadeIn();
-});
+  // Número
+  $("#numero").focus(function () {
+    $("#dica-numero").fadeIn();
+  });
 
-$("#numero").blur(validarNumero);
+  $("#numero").blur(validarNumero);
 
-// Experiência
-$("#experiencia").focus(function () {
-$("#dica-experiencia").fadeIn();
-});
+  // Experiência
+  $("#experiencia").focus(function () {
+    $("#dica-experiencia").fadeIn();
+  });
 
-$("#experiencia").blur(validarExperiencia);
-
-
+  $("#experiencia").blur(validarExperiencia);
 });
 
 // MÁSCARAS
@@ -285,44 +266,38 @@ $("#data").mask("00/00/0000");
 $("#celular").mask("(00) 00000-0000");
 $("#cep").mask("00000-000");
 
-
 function salvarFormulario() {
-
-validarNome();
-validarCpf();
-validarDataNascimento();
-validarGenero();
-validarEmail();
-validarCelular();
-validarCep();
-validarNumero();
-validarExperiencia();
-
+  validarNome();
+  validarCpf();
+  validarDataNascimento();
+  validarGenero();
+  validarEmail();
+  validarCelular();
+  validarCep();
+  validarNumero();
+  validarExperiencia();
 }
 
-function limparFormulario(){
+function limparFormulario() {
+  form.reset($("#form"));
 
-    form.reset($("#form"));
+  $("#nomeErro").hide();
+  $("#cpfErro").hide();
+  $("#dataErro").hide();
+  $("#generoErro").hide();
+  $("#emailErro").hide();
+  $("#celErro").hide();
+  $("#cepErro").hide();
+  $("#numeroErro").hide();
+  $("#expErro").hide();
 
-    $("#nomeErro").hide();
-    $("#cpfErro").hide();
-    $("#dataErro").hide();
-    $("#generoErro").hide();
-    $("#emailErro").hide();
-    $("#celErro").hide();
-    $("#cepErro").hide();
-    $("#numeroErro").hide();
-    $("#expErro").hide();
-    
-    $("#nome").css("border", "solid 3px #D6D6D6");
-    $("#cpf").css("border", "solid 3px #D6D6D6");
-    $("#data").css("border", "solid 3px #D6D6D6");
-    $("#genero").css("border", "solid 3px #D6D6D6");
-    $("#email").css("border", "solid 3px #D6D6D6");
-    $("#celular").css("border", "solid 3px #D6D6D6");
-    $("#cep").css("border", "solid 3px #D6D6D6");
-    $("#numero").css("border", "solid 3px #D6D6D6");
-    $("#experiencia").css("border", "solid 3px #D6D6D6");
-
-
+  $("#nome").css("border", "solid 3px #D6D6D6");
+  $("#cpf").css("border", "solid 3px #D6D6D6");
+  $("#data").css("border", "solid 3px #D6D6D6");
+  $("#genero").css("border", "solid 3px #D6D6D6");
+  $("#email").css("border", "solid 3px #D6D6D6");
+  $("#celular").css("border", "solid 3px #D6D6D6");
+  $("#cep").css("border", "solid 3px #D6D6D6");
+  $("#numero").css("border", "solid 3px #D6D6D6");
+  $("#experiencia").css("border", "solid 3px #D6D6D6");
 }

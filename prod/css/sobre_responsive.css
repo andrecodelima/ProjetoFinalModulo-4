@@ -4,7 +4,6 @@
         }
 
         nav .nav-link {
-        /* border: 2px solid red; */
         margin-top: 2%;
         text-transform: capitalize;
         padding-left: 20px;
@@ -12,7 +11,6 @@
       }
 
         ul .nav-item{
-          border: 2px solid red;
           font-size: 1.3rem;
         }
 
@@ -21,7 +19,6 @@
         }
 
         nav .nav-link img{
-          border: 2px solid red;
           width: 12%;
         }
         
@@ -31,13 +28,11 @@
         
 
     .main-galeria{
-    /* border: 2px solid red; */
     display: flex;
     justify-content: space-between;
 
   }
     .main-galeria article{
-    /* border: 2px solid blue; */
     background-color: #fff;
     width: auto;
     height: auto;
@@ -65,7 +60,6 @@
         }
 
         nav .nav-link {
-        /* border: 2px solid red; */
         margin-top: 2%;
         text-transform: capitalize;
         padding-left: 20px;
@@ -73,7 +67,6 @@
       }
 
         ul .nav-item{
-          border: 2px solid red;
           font-size: 1.3rem;
         }
 
@@ -82,7 +75,6 @@
         }
 
         nav .nav-link img{
-          border: 2px solid red;
           width: 12%;
         }
         
@@ -92,13 +84,11 @@
         
 
     .main-galeria{
-    /* border: 2px solid red; */
     display: flex;
     justify-content: space-between;
 
   }
     .main-galeria article{
-    /* border: 2px solid blue; */
     background-color: #fff;
     width: auto;
     height: auto;
@@ -125,7 +115,6 @@
         }
 
         nav .nav-link {
-        /* border: 2px solid red; */
         margin-top: 2%;
         text-transform: capitalize;
         padding-left: 20px;
@@ -133,7 +122,6 @@
       }
 
         ul .nav-item{
-          border: 2px solid red;
           font-size: 1.3rem;
 
         }
@@ -143,7 +131,6 @@
         }
 
         nav .nav-link img{
-          border: 2px solid red;
           width: 7%;
         }
         
@@ -152,13 +139,11 @@
         }
 
     .main-galeria{
-    border: 2px solid red;
     display: flex;
     justify-content: space-between;
 
   }
     .main-galeria article{
-    /* border: 2px solid blue; */
     background-color: #fff;
     width: auto;
     height: auto;
@@ -186,7 +171,6 @@
         }
 
         nav .nav-link {
-        /* border: 2px solid red; */
         margin-top: 2%;
         text-transform: capitalize;
         padding-left: 20px;
@@ -194,7 +178,6 @@
       }
 
         ul .nav-item{
-          border: 2px solid red;
           font-size: 1.3rem;
 
         }
@@ -204,7 +187,6 @@
         }
 
         nav .nav-link img{
-          border: 2px solid red;
           width: 7%;
         }
         
@@ -212,13 +194,11 @@
           display: none;
         }
     .main-galeria{
-    /* border: 2px solid red; */
     display: flex;
     justify-content: space-between;
 
   }
     .main-galeria article{
-    /* border: 2px solid blue; */
     background-color: #fff;
     width: auto;
     height: auto;
@@ -245,7 +225,6 @@
         }
 
         nav .nav-link {
-        /* border: 2px solid red; */
         margin-top: 2%;
         text-transform: capitalize;
         padding-left: 20px;
@@ -253,7 +232,6 @@
       }
 
         ul .nav-item{
-          border: 2px solid red;
           font-size: 1.3rem;
 
         }
@@ -263,7 +241,6 @@
         }
 
         nav .nav-link img{
-          border: 2px solid red;
           width: 7%;
         }
         
@@ -271,13 +248,11 @@
           display: none;
         }
     .main-galeria{
-    /* border: 2px solid red; */
     display: flex;
     justify-content: space-between;
 
   }
     .main-galeria article{
-    /* border: 2px solid blue; */
     background-color: #fff;
     width: auto;
     height: auto;
@@ -304,7 +279,6 @@
         }
 
         nav .nav-link {
-        /* border: 2px solid red; */
         margin-top: 2%;
         text-transform: capitalize;
         padding-left: 20px;
@@ -312,7 +286,6 @@
       }
 
         ul .nav-item{
-          border: 2px solid red;
           font-size: 1.3rem;
 
         }
@@ -322,7 +295,6 @@
         }
 
         nav .nav-link img{
-          border: 2px solid red;
           width: 7%;
         }
         
@@ -330,13 +302,11 @@
           display: none;
         }
     .main-galeria{
-    /* border: 2px solid red; */
     display: flex;
     justify-content: space-between;
 
   }
     .main-galeria article{
-    /* border: 2px solid blue; */
     background-color: #fff;
     width: auto;
     height: auto;
