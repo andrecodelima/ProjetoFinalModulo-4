@@ -2,22 +2,6 @@
 /* 320px — 480px: dispositivos móveis 
 - PORTRAIT  */
 @media (min-width: 320px) and (max-width: 480px) and (orientation:portrait){
-    .box-logo{
-        /* border-left: 20px solid #c4c4c4;
-        border-right: 20px solid #c4c4c4; */
-        width: 45%;
-        margin-bottom:5%;
-    }
-
-    .box-logo img{
-        height: 13vh;
-        width: 40vw;
-        background-color: #000;
-    }
-
-    .navbar{
-        border: 2px solid blue;
-    }
 
     nav .nav-link{
         /* border: 2px solid red; */
@@ -32,20 +16,6 @@
         width: 100%;
     }
 
-    section{
-        border: 2px solid red;
-        width:100%;
-        height: 65vh;
-  
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        align-items: center;
-      }
-
-    footer{
-        /* border: 2px solid red; */
-    }
     footer .col-md-4{
         /* border: 4px solid green; */
         width: 100%;
@@ -60,12 +30,6 @@
         /* border: 2px solid blue; */
         width: 100%;
     }
-
-    /* footer ul li{
-        border-right: 2px solid black;
-        width:25%;
-        text-align: center;
-    } */
 
     footer ul li:not(:last-child){
         border-right: 5px solid #898989;
@@ -97,19 +61,11 @@
         justify-content: space-around;
         align-items: center;
       }
+
+
 }
 
-/* 481px — 768px: iPads, tablets 
-- PORTRAIT  */
 
-/* 481px — 768px: iPads, tablets 
-- LANDSCAPE  */
-
-/* 769px — 1024px: telas pequenas, laptops 
-- PORTRAIT  */
-
-/* 769px — 1024px: telas pequenas, laptops 
-- LANDSCAPE  */
 
 
 

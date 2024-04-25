@@ -201,7 +201,16 @@ article {
 }
 
 
-
+/* PORTIFOLIO */
+section.portifolio{
+  width: 100%;
+  height: 50vh;
+  padding: 20px;
+  background-image: url('../../img/fundo_06.jpg');
+  background-size:cover;
+  background-repeat: no-repeat;
+  color: #ffffff;
+}
 
 /* MODAL */
 .main-modal{
